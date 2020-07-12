@@ -1,0 +1,32 @@
+<admission_info>
+
+    <slNo>23</slNo>
+    <fname>John </fname>
+    <lname>Carter</lname>
+    <admission_date>
+        <day>25</day>
+        <month>12</month>
+        <year>2015</year>
+    
+    </admission_date>
+
+    <slNo>29</slNo>
+    <fname>Bob </fname>
+    <lname>Marshal</lname>
+    <admission_date>
+        <day>13</day>
+        <month>01</month>
+        <year>1999</year>
+    
+    </admission_date>
+
+    <slNo>35</slNo>
+    <fname>Clark </fname>
+    <lname>Kent</lname>
+    <admission_date>
+        <day>17</day>
+        <month>06</month>
+        <year>2005</year>
+    </admission_date>
+
+</admission_info>
