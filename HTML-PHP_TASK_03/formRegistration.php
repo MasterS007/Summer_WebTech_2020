@@ -122,14 +122,12 @@ else {
 
 #Profile Picture validation
 
-$userid = $_REQUEST['userId'];
-
-if($userid == NULL || !$_REQUEST['fileName'])
+if(!$_REQUEST['fileName'])
 {
     echo "Invalid Profile!";
 }
 
-elseif ($_REQUEST['fileName'] && $userid > 0) 
+elseif ($_REQUEST['fileName']) 
 {
    $file = $_REQUEST['fileName'];
 
