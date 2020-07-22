@@ -63,16 +63,17 @@
 
    #Gender Validation
    
-   $gender = $_REQUEST['gender'];
+   
 
-   if($gender == NULL)
+   if(!isset($_REQUEST['gender']))
    {
        echo "Invalid Gender!";
    }
    else {
+       $gender = $_REQUEST['gender'];
        echo "Successful Submit";
    }
-*/
+
 
 #DOB Validation
 $date = $_REQUEST['date'];
@@ -90,6 +91,21 @@ elseif(($date>=1 && $date<=31) && ($month >=1 && $month<=12) && ($year >=1900 &&
 }
 else {
     echo "Invalid Date of Birth!";
+}
+*/
+
+#Degree Validation
+
+
+
+if(!isset($_REQUEST['degree']))
+{
+    
+    echo "Invalid Degree!";
+}
+else {
+    $degree = $_REQUEST['degree'];
+    echo "Submit Successful!";
 }
    
 ?>
