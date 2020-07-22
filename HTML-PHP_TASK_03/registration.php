@@ -92,11 +92,9 @@ elseif(($date>=1 && $date<=31) && ($month >=1 && $month<=12) && ($year >=1900 &&
 else {
     echo "Invalid Date of Birth!";
 }
-*/
+
 
 #Degree Validation
-
-
 
 if(!isset($_REQUEST['degree']))
 {
@@ -107,6 +105,19 @@ else {
     $degree = $_REQUEST['degree'];
     echo "Submit Successful!";
 }
-   
+  */
+
+  #Blood Group Validation
+  $blood =$_REQUEST['blood'];
+
+  if(empty($blood))
+  {
+      echo "Invalid Blood Group!";
+  }
+  else {
+      
+      echo "Submit Successful!";
+  }
+
 ?>
    
