@@ -1,13 +1,15 @@
 <?php
    
-   $name = $_REQUEST['Name'];
-   $len = strlen($name);
+ #  $name = $_REQUEST['Name'];
+  
+ #  $len = strlen($name);
    
-   $valid = FALSE;
+  // $nvalid = FALSE;
 
-   if($name == NULL || $len<2)
+#Name Validation
+  /* if($name == NULL || $len<2)
    {
-    $valid = FALSE;
+    $nvalid = FALSE;
    }
    
 
@@ -17,37 +19,48 @@
        {
              if($name>='A'&& $name<='Z' || $name>='a'&& $name<='z' || $name=='.' || $name=='-' )
              {
-                  $valid = TRUE;
+                  $nvalid = TRUE;
              }
 
              else {
-                 $valid = FALSE;
+                 $nvalid = FALSE;
              }
        }
 
    }
        
    else {
-       $valid =FALSE;
+       $nvalid =FALSE;
    }
 
-
-
-   
-
-
-   if($valid == TRUE)
+   if($nvalid == TRUE)
    {
        echo "Submit Successful!";
    }
    else {
        echo "Invalid Name!";
+   }*/
+   
+   #Email Validation
+   $email = $_REQUEST['Email'];
+   $evalid = FALSE;
+   $pos =strpos($email, '@');
+   $pos1 = strpos($email, ".com");
+
+   if($email == NULL)
+   {
+    echo "Invalid Email!";
+   }
+
+   elseif ($pos!=False && $pos1!=False && $pos1 > $pos) {
+          
+             echo "Submit Successful!";
+   }
+   else {
+       echo "Invalid Email!";
    }
    
+
    
-
-
-
-
-
 ?>
+   
