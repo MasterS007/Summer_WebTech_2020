@@ -42,7 +42,7 @@
    }*/
    
    #Email Validation
-   $email = $_REQUEST['Email'];
+  /* $email = $_REQUEST['Email'];
    $evalid = FALSE;
    $pos =strpos($email, '@');
    $pos1 = strpos($email, ".com");
@@ -59,7 +59,19 @@
    else {
        echo "Invalid Email!";
    }
+   */
+
+   #Gender Validation
    
+   $gender = $_REQUEST['gender'];
+
+   if($gender == NULL)
+   {
+       echo "Invalid Gender!";
+   }
+   else {
+       echo "Successful Submit";
+   }
 
    
 ?>
