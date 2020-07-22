@@ -105,7 +105,7 @@ else {
     $degree = $_REQUEST['degree'];
     echo "Submit Successful!";
 }
-  */
+  
 
   #Blood Group Validation
   $blood =$_REQUEST['blood'];
@@ -118,6 +118,23 @@ else {
       
       echo "Submit Successful!";
   }
+*/
+
+#Profile Picture validation
+
+$userid = $_REQUEST['userId'];
+
+if($userid == NULL || !$_REQUEST['fileName'])
+{
+    echo "Invalid Profile!";
+}
+
+elseif ($_REQUEST['fileName'] && $userid > 0) 
+{
+   $file = $_REQUEST['fileName'];
+
+   echo "Submit Successful!";
+}
 
 ?>
    
