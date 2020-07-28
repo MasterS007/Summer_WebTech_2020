@@ -62,15 +62,15 @@
                 'gender'=>$gender
               ];
     
-          setcookie('name', $name, time()+36000, '/');
-          setcookie('uname', $uname, time()+36000, '/');
-          setcookie('email', $email, time()+36000, '/');
-          setcookie('password', $password, time()+36000, '/');
-          setcookie('conpassword', $conpassword, time()+36000, '/');
-          setcookie('date', $date, time()+36000, '/');
-          setcookie('month', $month, time()+36000, '/');
-          setcookie('year', $year, time()+36000, '/');
-          setcookie('gender', $gender, time()+36000, '/');
+          setcookie('name', $name, time()+3600000, '/');
+          setcookie('uname', $uname, time()+3600000, '/');
+          setcookie('email', $email, time()+3600000, '/');
+          setcookie('password', $password, time()+3600000, '/');
+          setcookie('conpassword', $conpassword, time()+3600000, '/');
+          setcookie('date', $date, time()+3600000, '/');
+          setcookie('month', $month, time()+3600000, '/');
+          setcookie('year', $year, time()+3600000, '/');
+          setcookie('gender', $gender, time()+3600000, '/');
     
           header('location:login.php');
         }

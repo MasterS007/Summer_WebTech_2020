@@ -12,7 +12,7 @@
 			<tr>
 				<td colspan='2'>Xcompany
 					Logged in as <a href = "dashboard.php" name="username" > <?php echo $_COOKIE['uname']; ?></a>|
-				<a href = "login.php" name="logout">Logout</a>
+				<a href = "logout.php" name="logout">Logout</a>
 			</td>
 			</tr>
 			<tr>		
@@ -25,7 +25,7 @@
 					<li><a href="edit_profile.php">Edit Profile</a></li>
 					<li><a href="picture.html"></a>Change Profile Picture</li>
 					<li><a href="change_password.html">Change Password</a></li>
-					<li><a href="login.php">Logout</a></li>
+					<li><a href="logout.php">Logout</a></li>
 					</ul>
 				</td>
 				<td> 
@@ -36,10 +36,25 @@
 								<td>Name</td>
 								<td>:</td>
 								<td><?php echo $_COOKIE['name'];?></td>
-								<td rowspan="7" align="center">
-									<img width="128" src="../image/user.png"/>
+								<td rowspan="7" align="center">	
+									<?php
+									session_start();
+									if(isset($_COOKIE['updated']))
+									{
+									?>
+										<img width="128" src="<?php echo $_COOKIE['pic'];?>"/>
+										
+									<?php 
+									}
+									else
+									{
+									?>
+				                 	   <img width="128" src="image/profile.png"/>
+									<?php 
+									}
+									?>
 									<br/>
-									<a href="../write/picture.html">Change</a>
+									<a href="picture.html">Change</a>
 								</td>
 							</tr>		
 							<tr><td colspan="3"><hr/></td></tr>

@@ -1,10 +1,8 @@
 <?php
 
+session_start();
 if(isset($_COOKIE['checkRemember']))
 {	
-	echo $_COOKIE['uname'];
-	echo $_COOKIE['password'];
-	echo $_COOKIE['checkRemember']
 ?>
 
 <!DOCTYPE html>

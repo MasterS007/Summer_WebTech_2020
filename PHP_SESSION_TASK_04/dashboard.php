@@ -1,5 +1,6 @@
 <?php
   
+  session_start();
   if($_COOKIE['status'] == "OK" || $_COOKIE['status'] == "always ok")
   {
 	 ?>
@@ -15,7 +16,7 @@
         <tr>
             <td colspan='2'>Xcompany
                 Logged in as <a href = "dashboard.php" name="username" > <?php echo $_COOKIE['uname']; ?></a>|
-            <a href = "login.php" name="logout">Logout</a>
+            <a href = "logout.php" name="logout">Logout</a>
         </td>
 		</tr>
 		<br/>
@@ -29,7 +30,9 @@
 				<li><a href="edit_profile.php">Edit Profile</a></li>
 				<li><a href="picture.html"></a>Change Profile Picture</li>
 				<li><a href="change_password.html">Change Password</a></li>
-				<li><a href="login.php">Logout</a></li>
+				<li>
+				  <a href="logout.php">Logout</a>
+				</li>
 				</ul>
 			</td>
 			<td>Welcome <?php echo $_COOKIE['uname']; ?> </td>
