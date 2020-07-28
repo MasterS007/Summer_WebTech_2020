@@ -1,12 +1,10 @@
-<?php
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Login</title>
 </head>
 <body>
-     <form>
+     <form action="checkEditprof.php" method="POST">
 		<br/>
 		<table border ='1' cellpadding="0" cellspacing="0" >
 			<tr>
@@ -20,7 +18,7 @@
 				<p><b>Account</b></p>
 				<hr>
 					<ul>
-					<li><a href="dashboard.php">Dashboard</a></li>  
+					<li><a href="dashboard.php">Dashboard</a></li>    
 					<li><a href="profile.php">View Profile</a></li>                             
 					<li><a href="edit_profile.php">Edit Profile</a></li>
 					<li><a href="picture.html"></a>Change Profile Picture</li>
@@ -30,43 +28,57 @@
 				</td>
 				<td> 
 					<fieldset>
-						<legend><b>PROFILE</b></legend>
+						<legend><b>EDIT PROFILE</b></legend>
 						<table>
                             <tr>
 								<td>Name</td>
 								<td>:</td>
-								<td><?php echo $_COOKIE['name'];?></td>
-								<td rowspan="7" align="center">
-									<img width="128" src="../image/user.png"/>
-									<br/>
-									<a href="../write/picture.html">Change</a>
-								</td>
+								<td><input name="name" type="text"></td>
 							</tr>		
 							<tr><td colspan="3"><hr/></td></tr>
 							<tr>
 								<td>Email</td>
 								<td>:</td>
-								<td><?php echo $_COOKIE['email'];?></td>
+								<td><input name="email" type="text">
+						        <abbr title="hint: sample@example.com"><b>i</b></abbr></td>
 							</tr>		
 							<tr><td colspan="3"><hr/></td></tr>			
 							<tr>
 								<td>Gender</td>
 								<td>:</td>
-								<td><?php echo $_COOKIE['gender'];?></td>
+								<td>	 
+									<input name="gender" type="radio" value="Male">Male
+									<input name="gender" type="radio" value="Female">Female
+									<input name="gender" type="radio" value="Other">Other
+								
+								</td>
 							</tr>
 							<tr><td colspan="3"><hr/></td></tr>
 							<tr>
 								<td>Date of Birth</td>
 								<td>:</td>
-								<td><?php echo $_COOKIE['date']."/".$_COOKIE['month']."/".$_COOKIE['year'];?></td>
+								<td>	   
+									<input type="text" size="2" name="date" />/
+									<input type="text" size="2" name ="month" />/
+									<input type="text" size="4" name = "year"/>
+									<font size="2"><i>(dd/mm/yyyy)</i></font>
+								</td>
 							</tr>
 						</table>	
 						<hr/>
-						<a href="edit_profile.php">Edit Profile</a>	
+						
+					<input type="submit" name= "submit" value="Submit">
 					
 				</fieldset>
+				</tr>			
+            <tr style="text-align: center;">
+                <td colspan='2'>Copyright&copy 2017</td>
+            </tr>
 			</table>
 				
     </form>		
 </body>
 </html>
+
+
+

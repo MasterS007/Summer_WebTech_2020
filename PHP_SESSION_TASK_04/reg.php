@@ -45,7 +45,7 @@
             $gender = 'Female';
           }
 
-          else{
+          elseif($_POST['gender']=='Other'){
             $gender = 'Other';
           }
           

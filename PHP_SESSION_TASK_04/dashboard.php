@@ -24,8 +24,9 @@
 			<p><b>Account</b></p>
 			<hr>
 				<ul>
+				<li><a href="dashboard.php">Dashboard</a></li>  
 				<li><a href="profile.php">View Profile</a></li>                             
-				<li><a href="editprofile.html">Edit Profile</a></li>
+				<li><a href="edit_profile.php">Edit Profile</a></li>
 				<li><a href="picture.html"></a>Change Profile Picture</li>
 				<li><a href="change_password.html">Change Password</a></li>
 				<li><a href="login.php">Logout</a></li>
