@@ -32,7 +32,7 @@
             <tr>
                 <td>Xcompany
                 <a href = "publicHome.php" name="hbutton">Home</a>|
-                <a href = "login.html" name="lbutton">Login</a>|
+                <a href = "login.php" name="lbutton">Login</a>|
                 <a href = "registration.html"  name="rbutton">Registration</a>
             </td>
     
