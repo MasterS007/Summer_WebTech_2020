@@ -66,7 +66,6 @@
           setcookie('uname', $uname, time()+3600000, '/');
           setcookie('email', $email, time()+3600000, '/');
           setcookie('password', $password, time()+3600000, '/');
-          setcookie('conpassword', $conpassword, time()+3600000, '/');
           setcookie('date', $date, time()+3600000, '/');
           setcookie('month', $month, time()+3600000, '/');
           setcookie('year', $year, time()+3600000, '/');

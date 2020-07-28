@@ -29,15 +29,6 @@ if(isset($_POST['submit']))
 		  $gender = 'Other';
 		}
 		
-		$user = [
-			  
-			  'name'=>$name,
-			  'email'=>$email,
-			  'date'=>$date,
-			  'month'=>$month,
-			  'year'=>$year,
-			  'gender'=>$gender
-			];
   
 		setcookie('name', $name, time()+36000, '/');
 		setcookie('email', $email, time()+36000, '/');
