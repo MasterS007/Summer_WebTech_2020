@@ -30,7 +30,7 @@ if(isset($_COOKIE['checkRemember']))
 		</table>
 		
 		<hr>
-			<input type="checkbox" name="checkRemember" autocomplete="on">Remember Me
+			<input type="checkbox" name="checkRemember" autocomplete="on" checked>Remember Me
 			<br><br>
 			<input type="submit" name="submit" value="Submit"> <a href="forgotpass.html">Forgot Paswword?</a>
 			

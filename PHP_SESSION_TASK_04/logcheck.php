@@ -15,16 +15,16 @@ session_start();
                 
                 if(isset($_POST['checkRemember']))
                 {
-                  setcookie('checkRemember',$_POST['checkRemember'], time()+315,360,000, '/');
-                  setcookie('uname', $uname, time()+315,360,000, '/');
-                  setcookie('password', $password, time()+315,360,000, '/');
-                  setcookie('status', "always ok", time()+315,360,000, '/');
+                  setcookie('checkRemember',$_POST['checkRemember'], time()+315360000, '/');
+                  setcookie('uname', $uname, time()+315360000, '/');
+                  setcookie('password', $password, time()+315360000, '/');
+                  setcookie('status', "always ok", time()+315360000, '/');
                   header('location: dashboard.php');
                }
                else
                {
-                    setcookie('status', "OK", time()+3600, '/');
-                    setcookie('checkRemember', $_POST['checkRemember'], time()-315,360,000, '/');
+                    setcookie('status', "OK", time()+36000, '/');
+                    setcookie('checkRemember', $_POST['checkRemember'], time()-315360000, '/');
                     header('location: dashboard.php');
 
                }
