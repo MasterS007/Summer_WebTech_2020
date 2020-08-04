@@ -1,10 +1,3 @@
-<?php
-
-session_start();
-if(isset($_SESSION['status']))
-{	
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,13 +30,6 @@ if(isset($_SESSION['status']))
 	</form>
 </body>
 </html>
-                
-<?php
-}
-else{
-	header("location:login.php");
-}
-
-?>
+    
 	
 
