@@ -10,26 +10,33 @@ session_start();
 
         }
         else{
-			
+            
+            
 			$file = fopen('user.txt', 'r');
 			$data = fread($file, filesize('user.txt'));
 			$user = explode('|', $data);
+			$users = explode('/r/n', $data);
+			$counts=0;
+			echo count($users);
+			while($counts<(count($users)-1))
+			{
 
-
-			while(!feof($data)){
-				$user = fgets($data);
+				$data = $users[$counts];
 				$user = explode('|', $data);
+				
+				echo $counts;
+				$counts=$counts+1;
 			}
 
-			//print_r($user);
 
-			if(trim($user[0]) == $id&& trim($user[1]) == $password){
+			if(trim($user[0]) == $uname && trim($user[3]) == $password){
 				$_SESSION['status']  = "Ok";
-				header('location: login.php');
-			}
-            else{
-                echo "Invalid username/password";
-            }
+				header('location: home.php');
+				}
+				else
+				{
+				echo "Invalid username/password";
+				}
             
         }
 }
