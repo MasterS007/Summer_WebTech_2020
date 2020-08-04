@@ -5,8 +5,8 @@
 </head>
 <body>
 	<form action="logcheck.php" method="POST">
-		<fieldset>
-			<legend>SIGNIN</legend>
+		<fieldset style="width:max-content;">
+			<legend>LOGIN</legend>
 		<table>
 			<tr>
 				<td>User Id :</td>
@@ -23,7 +23,7 @@
         <hr>
               <input type="checkbox" name="checkRemember">Remember Me
                <br><br>
-              <input type="submit" name="submit" value="Submit"> <a href="forgotpass.html">Forgot Paswword?</a>
+              <input type="submit" name="submit" value="Login"> <a href="registration.html">Register</a>
 			
 	
 		</fieldset>

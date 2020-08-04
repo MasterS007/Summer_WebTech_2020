@@ -49,7 +49,8 @@
          
               $file = fopen('user.txt', 'a');
 			        fwrite($file,$id.'|'.$user.'|'. $name.'|'.$password.'|'.$email."/r/n");
-		        	fclose($file);
+              fclose($file);
+              $_SESSION['info']="ok";
     
         
           header('location:login.php');

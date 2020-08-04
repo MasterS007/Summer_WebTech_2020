@@ -6,7 +6,7 @@
 	<title>REGISTRATION</title>
 </head>
 <body>
-	<fieldset>
+	<fieldset style="width:max-content;">
 		<legend><b>REGISTRATION</b></legend>
 		<form action="reg.php" method="POST">
 			<br/>
@@ -16,7 +16,6 @@
 					<td>:</td>
 					<td><input name="id" type="text"></td>
 					<td></td>
-					
 					
 				<tr><td colspan="4"><hr/></td></tr>
 				<tr>
@@ -51,29 +50,22 @@
 					<abbr title="hint: sample@example.com"><b>i</b></abbr>
 				</td>
 				<td></td>
-			</tr><br>
+				
+				
+			</tr>
+			
 			<tr>
-				<td colspan="4">User Type <br>
-					<select name="user">
-
-				<option Value="User">User</option>
-				<option value="Admin">Admin</option>
-				  <option value="Employee">Employee</option>
+				<td colspan="4">User Type <i>[USER/ADMIN]</i><br>
+					<select name="user"> 
+						<option Value="User">User</option>
+						<option value="Admin">Admin</option>
 					</select>
-				
-			
 				</td>
-			
-
 			</tr>	
-				
-		
-					
-				
 			</table>
 			<hr/>
-			<input type="submit" name= "submit" value="Submit">
-			<input type="reset">
+			<input type="submit" name= "submit" value="Register" style="white-space: pre-line;">     <a href="login.php">Login</a>
+			
 		</form>
 	</fieldset>
 </body>
