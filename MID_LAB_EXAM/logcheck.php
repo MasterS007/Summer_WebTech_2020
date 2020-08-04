@@ -12,24 +12,16 @@ session_start();
         else{
             
             
-			$file = fopen('user.txt', 'r');
+            $file = fopen('user.txt', 'r');
 			$data = fread($file, filesize('user.txt'));
-			$user = explode('|', $data);
-			$users = explode('/r/n', $data);
-			$counts=0;
-			echo count($users);
-			while($counts<(count($users)-1))
-			{
-
-				$data = $users[$counts];
-				$user = explode('|', $data);
-				
-				echo $counts;
-				$counts=$counts+1;
+	
+			while(!feof($file)){
+				$user = fgets($file);
+                $user1 = explode('|', $data);
+              //  $users = explode('/r/n', $data);
 			}
 
-
-			if(trim($user[0]) == $uname && trim($user[3]) == $password){
+			if(trim($user1[0]) == $id && trim($user1[3]) == $password){
 				$_SESSION['status']  = "Ok";
 				header('location: home.php');
 				}
