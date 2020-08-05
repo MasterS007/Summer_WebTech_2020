@@ -34,6 +34,7 @@ session_start();
                         $_SESSION['name']=trim($user[2]);
                         $_SESSION['email']=trim($user[4]);
                         $_SESSION['type']=trim($user[1]);
+                        $_SESSION['password']=trim($user[3]);
                         $_SESSION['status']  = "Ok";
                         $valid = true;
                     break;
