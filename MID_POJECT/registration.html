@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
-    <title>Profile</title>
+    <title>registration</title>
 </head>
 <body>
 
@@ -20,6 +20,7 @@
 
     <fieldset class="mainField">
 		<legend ><b>REGISTRATION</b></legend>
+		
 		<form action="reg.php" method="POST">
 			<br/>
 			<table class="table1" cellpadding="0" cellspacing="0">
@@ -89,18 +90,24 @@
                     <td colspan="4"><hr>
                         User Type <br>
                         <select class="userType" name="user"> 
-                            <option Value="User">User</option>
-                            <option value="Admin">Admin</option>
+                            <option name="user" Value=""></option>
+							<option name="user" value="Admin">Admin</option>
+							<option name="user" value="Instructor">Instructor</option>
+							<option name="user" value="Learner">Learner</option>
                         </select>
                     </td>
                 </tr>	
 			</table>
 			<hr/>
-			<input type="submit" name= "submit" value="Submit">
+			<input type="submit" name= "submit" value="Register">
 			<input type="reset">
 		</form>
 	</fieldset>
 </section>
+
+<footer>
+
+</footer>
    
 </body>
 </html>
