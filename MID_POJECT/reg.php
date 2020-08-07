@@ -1,9 +1,12 @@
 <?php
+ include_once 'dbconnection.php';
+?>
+
+<?php
 
     if(isset($_REQUEST['submit']))
     {
      
-     $conn = mysqli_connect('localhost','root','','webtech_mid_project','3306');
       $name = $_POST['name'];
       $uname = $_POST['userName'];
 	    $email = $_POST['email'];

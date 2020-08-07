@@ -18,7 +18,6 @@ header
     padding-top:3px;
 
 }
-
 nav.ul
 {   
     color: white;
@@ -45,23 +44,29 @@ ul.navigation li.links a
 }
 
 /*Section or Division*/
+
 section
 {
     background-image: url("images/1.jpg");
     background-size: 100%;
+    height: 700px;
+    padding: 20px;
     background-position: center;
     color: white;
-    height: 100%;
-    padding: 20px;
+   
 }
 
-fieldset.mainField
+fieldset
 {
     width: fit-content;
     margin-left:38% ;
     padding-left: 20px;
     margin-top: 40px;
     border-radius: 5%;
+    background-color: white;
+    border-radius: 5px;
+    border-color: #ddd;
+    border:0;
     
 }
 hr{
@@ -69,28 +74,13 @@ hr{
     opacity: 20%;
 }
 
-fieldset
-{
-    background-color: white;
-    border-radius: 5px;
-    border-color: #ddd;
-    border:0;
-}
-
-
 legend
 {
     padding-bottom:0px;
     color: #666;
-}
-legend.innerLegend
-{
-    margin-left:-18px;
-}
+    font-weight: bold;
 
-/* table{
-    color: #555;
-} */
+}
 
 fieldset form table.table1
 {
@@ -99,18 +89,24 @@ fieldset form table.table1
     border-collapse: collapse;
     text-align: left; 
     border-color:white;
-     width:100%; 
-
+    width:100%; 
 }
+
+a
+{
+    color:darkcyan;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
 .table1 td
 {
-  color:#555;
- 
+  color:#666;
   border:2px  ;
-  /* height:50px; */
+  padding-bottom: 20px;
+  font-style: normal;
   
 }
-
 input{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -126,13 +122,10 @@ input:focus {
      color: #2d9fd9;
 }
 
-select.userType
+i.RememberMe
 {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-     border-radius: 5px;
-     border: 1px solid #ddd;
-     color:#666;
+    color: #666;
+
 }
 
 /*Footer*/
@@ -141,3 +134,4 @@ footer{
     padding:30px;
     color: white;
 }
+     
