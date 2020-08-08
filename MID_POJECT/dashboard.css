@@ -22,31 +22,31 @@ nav
     color: white;
     list-style-type: none;
 }
-.logo a
+ul.navigation li.logo a
   {
-    background-image: url("images/logo.jpg");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    text-indent: -999999px;
+    color:lightblue;
     height: 100px;
     width: 300px;
-    margin-left: 40%;
+    margin-left:5%;
     position: relative;
-    top:-100px;
+    top:-70px;
     bottom: 10px;
+    font-style: italic;
+    font-size: 20px;
+   
+    text-decoration-line: none; 
   }
-ul.navigation li.links
+/*ul.navigation li.links
 {
     
     margin-top: 5px;
     margin-right:20px;
     margin-left: 20px;
     display: inline-block;
-    position: relative;
+    
     top:-40px;
     
-}
+}*/
 
 .comboBox
 {   
@@ -72,7 +72,7 @@ ul.navigation li.searchBox
     margin-right:20px;
     display: inline-block;
     position: relative;
-    top:-70px;
+    top:-47px;
     
 }
 
@@ -91,6 +91,57 @@ ul.navigation li.searchBox
      /*-webkit-transition: width 0.4s ease-in-out;
      transition: width 0.4s ease-in-out;*/
   }
-  ul.navigation li.searchBox input[type=text]:focus {
+  ul.navigation li.searchBox input[type=text]:focus 
+  {
     width: 75%;
+  }
+
+  /*Middle Part*/
+
+  div.verticleLine
+  {
+    border-left: 2px solid #ddd;
+    height: 600px;
+    position: absolute;
+    left: 22%;
+    margin-left: -3px;
+    top: 88px;
+  }
+
+  main 
+  {
+    background-color: white;
+    margin-left: 12%;
+    margin-top: 40px;
+  }
+  .section-heading a
+  {
+      color: #5899; 
+      text-decoration-style: none;
+    text-decoration-line: none; 
+
+  }
+  ul.stuff li
+  {
+     
+      margin-left:-40px;
+      position: relative;
+      list-style-type: none; 
+      padding-bottom: 20px;
+  }
+  
+
+  ul.stuff li a
+  {
+   
+    padding:0px 20px ;  
+    color: darkgoldenrod;
+    text-decoration-style: none;
+    text-decoration-line: none;  
+  }
+  ul.stuff li a:hover
+  {   
+    border: 1px solid #ddd;
+    border-radius: 5px;
+      box-sizing: border-box;
   }

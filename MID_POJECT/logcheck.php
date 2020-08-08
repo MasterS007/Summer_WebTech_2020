@@ -35,6 +35,11 @@ session_start();
                }
                else
                {
+                setcookie('uname', $uname, time()+3600, '/');
+                setcookie('password', $password, time()+3600, '/');
+                setcookie('name', $name, time()+3600, '/');
+                
+                $_SESSION['status']='OK';
                 echo "login successfull";
                 
                    // header('location: dashboard.php');

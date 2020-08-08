@@ -88,9 +88,6 @@ legend.innerLegend
     margin-left:-18px;
 }
 
-/* table{
-    color: #555;
-} */
 
 fieldset form table.table1
 {
@@ -106,7 +103,7 @@ fieldset form table.table1
 {
   color:#555;
  
-  border:2px  ;
+  border:2px;
   /* height:50px; */
   
 }
