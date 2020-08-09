@@ -25,10 +25,9 @@ if(isset($_COOKIE['checkRemember']))
     </header>
 
     <section>
-
-        <fieldset>
+        <form action="logcheck.php" method="POST">  
+            <fieldset>
             <legend>LOGIN</legend>
-            <form action="logcheck.php" method="POST">
 
                 <table class="table1">
                     <tr>
@@ -53,8 +52,8 @@ if(isset($_COOKIE['checkRemember']))
                 <br><br>
                 <input type="submit" name="submit" value="Login"> <a href="registration.html">Register</a>
                 
-            </form>
-        </fieldset>
+            </fieldset>
+        </form>
 
     </section>
 
@@ -91,10 +90,9 @@ else
     </header>
 
     <section>
-        <fieldset>
-            <legend>LOGIN</legend>
-
-            <form action="logcheck.php" method="POST">
+        <form action="logcheck.php" method="POST">
+            <fieldset>
+                <legend>LOGIN</legend>
                 <br/>
                <table class="table1" cellpadding="0" cellspacing="0">
                     <tr>
@@ -114,13 +112,12 @@ else
                
                 </table>
                
-            <hr>
-                  <input  type="checkbox" name="checkRemember"><i class="RememberMe">Remember Me</i>
-                   <br><br>
-                  <input type="submit" name="submit" value="Login"> <a href="registration.html">Register</a>
-                
-            </form>
-        </fieldset>
+                <hr>
+                <input  type="checkbox" name="checkRemember"><i class="RememberMe">Remember Me</i>
+                <br><br>
+                <input type="submit" name="submit" value="Login"> <a href="registration.html">Register</a>
+            </fieldset>
+        </form>
     </section>
 
     <footer>

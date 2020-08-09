@@ -144,7 +144,7 @@ main div.verticleLine
     box-sizing: border-box;
   }
 
-  main div fieldset.editfield
+  main div form fieldset.editfield
   {
     background-color: white;
     border-radius: 5px;
@@ -165,7 +165,7 @@ legend.mainLegend
     color: #666;
 }
   
- div fieldset.editfield form table.table1
+ div form fieldset.editfield  table.table1
   {
     padding-left:-10px;
     margin-top: 12%;

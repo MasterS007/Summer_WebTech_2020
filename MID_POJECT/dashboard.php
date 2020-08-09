@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+    if(isset($_COOKIE['status']))
+    {
+        ?>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +42,7 @@
              </select>
              <ul class="navigation">
                  <li class="searchBox"><input type="text" name="search" placeholder="Search.."></li>
-                 <li class="logo"><a href="dashboard.html">MNP Academy</a></li>
+                 <li class="logo"><a href="dashboard.php">MNP Academy</a></li>
              </ul>
          </nav>
     </header>
@@ -45,11 +50,11 @@
     <div class="verticleLine"></div>
 
     <main>
-        <h4 class="section-heading"><a href="dashboard.html">Sirajum Munira</a></h4>
+        <h4 class="section-heading"><a href="dashboard.php">Sirajum Munira</a></h4>
         <section>
             <div class="accountStuff">
                 <ul class="stuff">
-                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="profile.php">Profile</a></li>
                     <li><a href="courses_taken.html">Courses</a></li>
                     <li><a href="progress.html">Progress</a></li>
                     <li><a href="blog.html">Blogs</a></li>
@@ -57,12 +62,16 @@
                 </ul>
             </div>
 
-        </section>
-    </main>
-   
-
-        
-
-    
-</body>
+            </section>
+        </main> 
+    </body>
 </html>
+
+        <?php
+    }
+    else
+    {
+        header("location:login.php");
+    }
+
+?>

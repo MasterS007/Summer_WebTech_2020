@@ -1,12 +1,18 @@
-<!DOCTYPE html>
+<?php
+
+    if(isset($_COOKIE['status']))
+    {
+        ?>
+        <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="profile.css"> <link rel>
-        <title>Profile</title>
+       <link rel="stylesheet" href="editprofile.css"><link rel>  
+        <title>Edit Profile</title>
     </head>
     <body>
+
         <header>
              <nav>
                  <select class="comboBox">
@@ -37,81 +43,83 @@
                  </select>
                  <ul class="navigation">
                      <li class="searchBox"><input type="text" name="search" placeholder="Search.."></li>
-                     <li class="logo"><a href="dashboard.html">MNP Academy</a></li>
+                     <li class="logo"><a href="dashboard.php">MNP Academy</a></li>
                  </ul>
              </nav>
         </header>
-    
-        
-        <section>
-            <div class="verticleLine"></div>
-            <h4 class="section-heading"><a href="dashboard.html">Sirajum Munira</a></h4>
-            <div class="accountStuff">
+            
+        <main>
+                <h4 class="section-heading"><a href="dashboard.php">Sirajum Munira</a></h4>
+                <div class="verticleLine"></div>
+                <div class="accountStuff">
                     <ul class="stuff">
-                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="profile.php">Profile</a></li>
                         <li><a href="courses_taken.html">Courses</a></li>
                         <li><a href="progress.html">Progress</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="logout.html">Logout</a></li>
                     </ul>
-            </div>
-                <!--Profile Table-->
-            <div class="profile_div">
-                <fieldset>
-                    <legend class="mainLegend"><b>PROFILE</b></legend>
-                    <form method="" action="">
-                        <table class="profile_table">
-                            <tr>
-                                <td>Name</td>
-                                <td>:</td>
-                                <td><!--<?php echo $_COOKIE['name'];?>-->Sirajum Munira</td>
-                                <td rowspan="7">	
-                                    <!--<?php
-                                        session_start();
-                                        if(isset($_COOKIE['updated']))
-                                        {
-                                        ?>-->	
-                                            <!--<img width="128" src="<?php echo $_COOKIE['pic'];?>"/>-->
-                                            
-                                    <!--<?php 
-                                        }
-                                        else
-                                        {
-                                        ?>-->	
-                                        <img width="128" src="images/profile.ico"/>
-                                    <!--<?php 
-                                        }
-                                        ?>-->	
-                                        <br/>
-                                        <a class="propic" href="picture.html">Change</a>
-                                </td>
+                </div>
+                <div>
+                    <form action="editprofile_check.php" method="POST">
+                        <fieldset class="editfield">
+                        <legend class="mainLegend"><b>EDIT PROFILE</b></legend>
+                            <table class="table1">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="name" ></td>
                                 </tr>		
                                 <tr><td colspan="3"><hr/></td></tr>
                                 <tr>
                                     <td>Email</td>
                                     <td>:</td>
-                                    <td><!--<?php echo $_COOKIE['email'];?>-->munirasirajum13@gmail.com</td>
+                                    <td>
+                                        <input type="text" name="email" >
+                                        <abbr title="hint: sample@example.com"><b>i</b></abbr>
+                                    </td>
                                 </tr>		
                                 <tr><td colspan="3"><hr/></td></tr>			
                                 <tr>
                                     <td>Gender</td>
                                     <td>:</td>
-                                    <td><!--<?php echo $_COOKIE['gender'];?>-->Female</td>
+                                    <td>	 
+                                        <input name="gender" type="radio" value="Male">Male
+                                        <input name="gender" type="radio" value="Female">Female
+                                        <input name="gender" type="radio" value="Other">Other
+                                    </td>
                                 </tr>
                                 <tr><td colspan="3"><hr/></td></tr>
                                 <tr>
                                     <td>Date of Birth</td>
                                     <td>:</td>
-                                    <td><!--<?php echo $_COOKIE['date']."/".$_COOKIE['month']."/".$_COOKIE['year'];?>-->5/8/1997</td>
+                                    <td>	   
+                                        <input type="text" size="2" name="date" />/
+                                        <input type="text" size="2" name ="month" />/
+                                        <input type="text" size="4" name = "year"/>
+                                        <font size="2"><i>(dd/mm/yyyy)</i></font>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td colspan="3"><hr/></td>
-                                </tr>
-                        </table>
-                    </form>	
-                    <a href="profile-edit.html"> Edit Profile </a>	
-                </fieldset>	
-            </div>
-        </section>
+                            </table>	
+                            <hr/>
+                            <input type="submit" name= "submit" value="Submit">
+                            </fieldset>
+                    </form>
+                       
+                </div>
+                
+            </main>
+   
     </body>
 </html>
+
+        <?php
+    }
+    else
+    {
+        header("location:login.php");
+    }
+    
+    
+    ?>
+
