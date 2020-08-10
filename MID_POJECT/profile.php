@@ -3,8 +3,8 @@
     if(isset($_COOKIE['status']))
     {
         ?>
-        <!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +54,7 @@
             <div class="accountStuff">
                     <ul class="stuff">
                         <li><a href="profile.php">Profile</a></li>
-                        <li><a href="courses_taken.html">Courses</a></li>
+                        <li><a href="mycourse.html">Courses</a></li>
                         <li><a href="progress.html">Progress</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="logout.html">Logout</a></li>
@@ -88,7 +88,7 @@
                                         }
                                         ?>	
                                         <br/>
-                                        <a class="propic" href="picture.html">Change</a>
+                                        <a class="propic" href="changepicture.php">Change</a>
                                 </td>
                                 </tr>		
                                 <tr><td colspan="3"><hr/></td></tr>
@@ -116,7 +116,7 @@
                     
                         <a href="profile-edit.php"> Edit Profile </a>	
                     </fieldset>	
-                </form>	
+                </form>       
             </div>
         </section>
     </body>

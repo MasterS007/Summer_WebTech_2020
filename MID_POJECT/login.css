@@ -43,9 +43,9 @@ ul.navigation li.links a
     text-decoration-line: none;
 }
 
-/*Section or Division*/
+/*main or Division*/
 
-section
+main
 {
     background-image: url("images/1.jpg");
     background-size: 100%;

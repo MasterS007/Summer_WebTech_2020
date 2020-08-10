@@ -42,8 +42,9 @@ session_start();
                   setcookie('year', $year, time()+315360000, '/');
                   setcookie('status', "always ok", time()+315360000, '/');
                   
+                 
                   header('location: dashboard.php');
-                 echo "login successfull";
+                // echo "login successfull";
                  
                }
                else
@@ -61,10 +62,20 @@ session_start();
                 setcookie('status', "always ok", time()+3600, '/');
                 
                
-                echo "login successfull";
+              //  echo "login successfull";
                 
                     header('location: dashboard.php');
 
+               }
+
+               if($data['user_typ']=='Instructor')
+               {
+                   header("location:dashboard.php");
+                   
+               }
+               else
+               {
+                   echo "User page is not available";
                }
             }
             else{

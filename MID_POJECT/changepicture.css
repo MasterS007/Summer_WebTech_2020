@@ -88,14 +88,20 @@ ul.navigation li.searchBox
 
   /*Middle Part*/
 
- section
-  {
-    background-color: white;
-    margin-left: 12%;
-    margin-top: 40px;
-  }
   
-  div.verticleLine
+
+main
+  {
+    background-image: url("images/bkstack.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 700px;
+    padding: 20px;
+  }
+
+main div.verticleLine
   {
     border-left: 2px solid #ddd;
     height: 600px;
@@ -105,18 +111,18 @@ ul.navigation li.searchBox
     top: 88px;
   }
 
-
-  .section-heading a
+  main h4.section-heading a
   {
       color: #5899; 
       text-decoration-style: none;
-      text-decoration-line: none; 
+      text-decoration-line: none;
+      margin-left:150px; 
 
   }
   ul.stuff li
   {
      
-      margin-left:-40px;
+      margin-left:100px;
       position: relative;
       list-style-type: none; 
       padding-bottom: 20px;
@@ -138,45 +144,56 @@ ul.navigation li.searchBox
     box-sizing: border-box;
   }
 
-  div.profile_div
-  {
-
-    margin-left:22% ;
-   
-    margin-top: -250px;
-      
-  }
-
-  .profile_div fieldset
+  main div form fieldset.editfield
   {
     background-color: white;
     border-radius: 5px;
-    border: 1px solid #ddd;
-    width: fit-content;
+    border-color: #ddd;
+    border:0;
+    box-sizing: border-box;
+    width: max-content;
     position: relative;
+    margin-left: 40%;
+    margin-top: -250px;
+    padding: 60px;
+    color:#555;
     
   }
-  legend.mainLegend 
+
+  .editfield img
+  {
+      border:1px solid #ddd ;
+      border-radius: 8px;
+      margin-top: -35px;
+      
+  }
+
+legend.mainLegend
 {
-    padding-bottom:0px;
+    margin-left: -40px;
+    padding-bottom:2px;
     color: #666;
 }
-  
-.profile_table td
-  {
-    color:#555;
-    border:2px  ;
-    padding-right: 60px;
 
-  }
 
-   a.propic
-  {
-      padding-left: 39px;
-  }
+input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     border-radius: 5px;
+     border: 1px solid #ddd;
+     color:#666;
+     margin-top: 20px;
+    }
+    
+input:focus {
+     outline: none;
+     border: 1px solid #ddd;
+     color: #2d9fd9;
+}
 
-  a
-  {
-    color: darkcyan;
-    text-decoration-line: none;
-  }
+/*Footer*/
+footer{
+    background: darkcyan;
+    padding:40px;
+    color: white;
+}

@@ -1,15 +1,15 @@
-<?php
+<!--<?php
 
     if(isset($_COOKIE['status']))
     {
-        ?>
+        ?>-->
         <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard1.css"> <link rel>
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="mycourses.css"> <link rel>
+    <title>My Course</title>
 </head>
 <body>
     <header>
@@ -47,10 +47,10 @@
          </nav>
     </header>
 
-        <div class="verticleLine"></div>
+    <div class="verticleLine"></div>
 
     <main>
-        <h4 class="section-heading"><a href="dashboard.php"><?php echo $_COOKIE['name'];?></a></h4>
+        <h4 class="section-heading"><a href="dashboard.php">Sirajum Munira</a></h4>
             <div class="accountStuff">
                 <ul class="stuff">
                     <li><a href="profile.php">Profile</a></li>
@@ -60,32 +60,42 @@
                     <li><a href="logout.html">Logout</a></li>
                 </ul>
             </div>
+
+           
+
+            <div class="editcourse">
+                <button type="button" name="courcse">Edit Course</button>
+            </div>
             <section>
-                <h2 class="welcomeheading">Welcome <?php echo $_COOKIE['name'];?></h2>
-                <h5 class="addingSchool"><a href="#">Add your organization</a></h5> 
-                
+                <h3 class="heading">My Cources</h3>
             </section>
-
-            <div class="wel">  
-                  
-                <ul class="wlist">
-                    <li><a href=classes.php>Classes</a></li>
-                    <li><a href="#">Students</a></li>
-                    <li><a href="#">Files</a></li>
-                </ul> 
-                <hr>
-           </div>
-            
-    </main> 
-
+            <div class="myCources">
+                <ul class="science">
+                    <h5>Science</h5>
+                    <li>Physics</li>
+                    <li>Mathematics</li>
+                    <li>Chemistry</li>
+                </ul>
+                <ul class="programming language">
+                    <h5>Programming Language</h5>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                </ul>
+                <ul class="computer science">
+                    <h5>Computer Science</h5>
+                    <li>Introduction to Database</li>
+                    <li>Introdouction to Programming Language</li>
+                </ul>
+            </div>
+        </main> 
     </body>
 </html>
 
-<?php
+<!--<?php
     }
     else
     {
         header("location:login.php");
     }
 
-?>
+?>-->        

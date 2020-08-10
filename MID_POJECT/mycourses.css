@@ -88,13 +88,6 @@ ul.navigation li.searchBox
 
   /*Middle Part*/
 
- section
-  {
-    background-color: white;
-    margin-left: 12%;
-    margin-top: 40px;
-  }
-  
   div.verticleLine
   {
     border-left: 2px solid #ddd;
@@ -105,12 +98,17 @@ ul.navigation li.searchBox
     top: 88px;
   }
 
-
+  main 
+  {
+    background-color: white;
+    margin-left: 12%;
+    margin-top: 40px;
+  }
   .section-heading a
   {
       color: #5899; 
       text-decoration-style: none;
-      text-decoration-line: none; 
+    text-decoration-line: none; 
 
   }
   ul.stuff li
@@ -136,47 +134,60 @@ ul.navigation li.searchBox
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
-  }
-
-  div.profile_div
-  {
-
-    margin-left:22% ;
    
-    margin-top: -250px;
-      
+  }
+   
+ div.editcourse button
+  {
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 80%;
+      top: -250px;
+      color:#666;
+      font-size: 14px;
+      position: relative;
+  }
+  
+  div.editcourse button:hover
+  {
+      color:darkcyan;
   }
 
-  .profile_div fieldset
+  div.myCources
   {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    width: fit-content;
+    margin-left: 15%;
+    top:-300px;
+    border: 1px dotted #ddd;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: max-content;
+    padding-right: 20px;
     position: relative;
+  }
+  
+  div.myCources ul li
+  {
+    display:block;
+    color: #333;
+    margin-left: -20px;
     
   }
-  legend.mainLegend 
-{
-    padding-bottom:0px;
-    color: #666;
-}
+
+  h5
+  {
+    margin-left: -20px;
+    margin-bottom: 8px;
+    color:lightseagreen;
+  }
+
+  section h3.heading
+  {
+    margin-left: 15%;
+    top:-300px;
+    position: relative;
+    color:#666;
+  }
+
   
-.profile_table td
-  {
-    color:#555;
-    border:2px  ;
-    padding-right: 60px;
-
-  }
-
-   a.propic
-  {
-      padding-left: 39px;
-  }
-
-  a
-  {
-    color: darkcyan;
-    text-decoration-line: none;
-  }

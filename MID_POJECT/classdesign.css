@@ -36,17 +36,7 @@ ul.navigation li.logo a
    
     text-decoration-line: none; 
   }
-/*ul.navigation li.links
-{
-    
-    margin-top: 5px;
-    margin-right:20px;
-    margin-left: 20px;
-    display: inline-block;
-    
-    top:-40px;
-    
-}*/
+
 
 .comboBox
 {   
@@ -113,6 +103,7 @@ ul.navigation li.searchBox
     background-color: white;
     margin-left: 12%;
     margin-top: 40px;
+    
   }
   .section-heading a
   {
@@ -143,5 +134,96 @@ ul.navigation li.searchBox
   {   
     border: 1px solid #ddd;
     border-radius: 5px;
-      box-sizing: border-box;
+    box-sizing: border-box;
+   
+  }
+
+  h2.welcomeheading
+  {
+      margin-top: -265px;    
+      margin-left:75%;
+  }
+  a
+  {
+    text-decoration-line: none;
+  }
+
+  div hr
+  {
+    width:96%;
+    border:1px solid #ddd;
+  }
+  .addingSchool 
+  {    
+      margin-left:84%;
+      margin-top: -20px;
+      font-style: italic;
+      
+  }
+
+  div.wel 
+  {
+    margin-left:10% ;
+  }
+  ul.wlist li
+  {
+    display: inline-block;
+    padding-right: 20px;
+    position: relative;
+  }
+
+  ul.wlist li a:active
+  {
+    border-bottom: 3px solid darkcyan;
+    
+  }
+
+  div.titleb
+  {
+      margin-left:12%;
+      margin-top: 20px;
+  }
+  div.classes
+   {
+      margin-left: 11%;
+      margin-top: 5px;
+   }
+
+  
+  div.titleb h4
+  {
+      margin-left:2% ;
+  }
+
+  div.titleb button.addClass
+  {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 90%;
+    top: -40px;
+    color:#666;
+    font-size: 14px;
+    position: relative;
+  }
+
+  
+  button.addClass:hover
+  {
+      color: darkcyan;
+  }
+
+  
+
+  ul.myClass li
+  {
+      border: 1px solid #ddd;
+      width:80%;
+      height:35px;
+      top:-50px;
+      display: block;
+      padding-left: 20px;
+      padding-top: 20px;
+      position: relative;
   }

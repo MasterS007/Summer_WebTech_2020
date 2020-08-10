@@ -88,13 +88,6 @@ ul.navigation li.searchBox
 
   /*Middle Part*/
 
- section
-  {
-    background-color: white;
-    margin-left: 12%;
-    margin-top: 40px;
-  }
-  
   div.verticleLine
   {
     border-left: 2px solid #ddd;
@@ -105,12 +98,18 @@ ul.navigation li.searchBox
     top: 88px;
   }
 
-
+  main 
+  {
+    background-color: white;
+    margin-left: 12%;
+    margin-top: 40px;
+    
+  }
   .section-heading a
   {
       color: #5899; 
       text-decoration-style: none;
-      text-decoration-line: none; 
+    text-decoration-line: none; 
 
   }
   ul.stuff li
@@ -136,47 +135,50 @@ ul.navigation li.searchBox
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
+   
   }
 
-  div.profile_div
+  div.wel
   {
+      margin-left: 50%;
+  }
 
-    margin-left:22% ;
-   
-    margin-top: -250px;
+  h2.welcomeheading
+  {
+      margin-top: -265px;    
+      margin-left:75%;
+  }
+  a
+  {
+    text-decoration-line: none;
+  }
+
+  div hr
+  {
+    width:96%;
+    border:1px solid #ddd;
+  }
+  .addingSchool 
+  {    
+      margin-left:84%;
+      margin-top: -20px;
+      font-style: italic;
       
   }
 
-  .profile_div fieldset
+  div.wel 
   {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    width: fit-content;
+    margin-left:10% ;
+  }
+  ul.wlist li
+  {
+    display: inline-block;
+    padding-right: 20px;
     position: relative;
+  }
+
+  ul.wlist li a:active
+  {
+    border-bottom: 3px solid darkcyan;
     
-  }
-  legend.mainLegend 
-{
-    padding-bottom:0px;
-    color: #666;
-}
-  
-.profile_table td
-  {
-    color:#555;
-    border:2px  ;
-    padding-right: 60px;
-
-  }
-
-   a.propic
-  {
-      padding-left: 39px;
-  }
-
-  a
-  {
-    color: darkcyan;
-    text-decoration-line: none;
   }
