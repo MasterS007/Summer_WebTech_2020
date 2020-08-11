@@ -79,7 +79,7 @@
 
            <div class="titleb">
                <h4 class="titleC">My Class</h4>
-               <button type="button" class="addClass">Add class</button>
+               <button type="button" class="addClass"><a href="addClass.php">Add class</a></button>
             </div>
            <div class="classes">
                    <ul class="myClass">
