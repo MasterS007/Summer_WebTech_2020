@@ -2,14 +2,14 @@
 
     if(isset($_COOKIE['status']))
     {
-        ?>
+        ?> 
         <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard1.css"> <link rel>
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="all_designs/dashboard1.css"> 
+    <title>Class</title>
 </head>
 <body>
     <header>
@@ -50,11 +50,12 @@
         <div class="verticleLine"></div>
 
     <main>
+       
         <h4 class="section-heading"><a href="dashboard.php"><?php echo $_COOKIE['name'];?></a></h4>
             <div class="accountStuff">
                 <ul class="stuff">
                     <li><a href="profile.php">Profile</a></li>
-                    <li><a href="mycourse.html">Courses</a></li>
+                    <li><a href="mycourse.php">Courses</a></li>
                     <li><a href="progress.html">Progress</a></li>
                     <li><a href="blog.html">Blogs</a></li>
                     <li><a href="logout.html">Logout</a></li>
@@ -69,15 +70,28 @@
             <div class="wel">  
                   
                 <ul class="wlist">
-                    <li><a href=classes.php>Classes</a></li>
-                    <li><a href="#">Students</a></li>
-                    <li><a href="#">Files</a></li>
+                    <li><a href="dashboard.php">Classes</a></li>
+                    <li><a href="allstudent.php">Students</a></li>
+                    <li><a href="#">Tips</a></li>
                 </ul> 
                 <hr>
            </div>
+
+           <div class="titleb">
+               <h4 class="titleC">My Class</h4>
+               <button type="button" class="addClass">Add class</button>
+            </div>
+           <div class="classes">
+                   <ul class="myClass">
+                   <li><a href="insideClass.php">Class:Science</a></li><br>
+                   <li><a href="insideClass.php">Class:Programming Language</a></li><br>
+                   <li><a href="insideClass.php">Class:Computer Science</a></li>
+               </ul>
+           </div>
             
     </main> 
-
+    <footer>
+    </footer>
     </body>
 </html>
 

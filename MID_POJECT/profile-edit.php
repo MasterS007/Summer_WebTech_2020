@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="editprofile.css"><link rel>  
+       <link rel="stylesheet" href="all_designs/editprofile.css"><link rel>  
         <title>Edit Profile</title>
     </head>
     <body>
@@ -54,7 +54,7 @@
                 <div class="accountStuff">
                     <ul class="stuff">
                         <li><a href="profile.php">Profile</a></li>
-                        <li><a href="mycourse.html">Courses</a></li>
+                        <li><a href="mycourse.php">Courses</a></li>
                         <li><a href="progress.html">Progress</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="logout.html">Logout</a></li>
@@ -109,6 +109,8 @@
                 </div>
                 
             </main>
+            <footer>
+    </footer>
    
     </body>
 </html>
