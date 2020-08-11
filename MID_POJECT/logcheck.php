@@ -40,31 +40,35 @@ session_start();
                   setcookie('date', $date, time()+315360000, '/');
                   setcookie('month', $month, time()+315360000, '/');
                   setcookie('year', $year, time()+315360000, '/');
-                  setcookie('status', "always ok", time()+315360000, '/');
+                  setcookie('remstatus', "always ok", time()+315360000, '/');
                   
                  
                   header('location: dashboard.php');
                 // echo "login successfull";
                  
                }
-               else
+               else if(empty($_POST['checkRemember']))
                {
+                
+                setcookie('checkRemember',$_POST['checkRemember'], time()-360000, '/');
+                
                 setcookie('uname', $uname, time()+3600, '/');
                 setcookie('password', $password, time()+3600, '/');
                 setcookie('name', $name, time()+3600, '/');
                 setcookie('name', $data['u_name'], time()+3600, '/');
-                  setcookie('email', $data['email'], time()+3600, '/');
-                  setcookie('gender', $data['gender'], time()+3600, '/');
-                  
-                  setcookie('date', $date, time()+3600, '/');
-                  setcookie('month', $month, time()+3600, '/');
-                  setcookie('year', $year, time()+3600, '/');
-                setcookie('status', "always ok", time()+3600, '/');
+                setcookie('email', $data['email'], time()+3600, '/');
+                setcookie('gender', $data['gender'], time()+3600, '/');
+
+                setcookie('date', $date, time()+3600, '/');
+                setcookie('month', $month, time()+3600, '/');
+                setcookie('year', $year, time()+3600, '/');
+                setcookie('remstatus', "always ok", time()-360000, '/');
+                setcookie('status',"OK",time()+3600,'/');
                 
                
               //  echo "login successfull";
                 
-                    header('location: dashboard.php');
+                header('location: dashboard.php');
 
                }
 

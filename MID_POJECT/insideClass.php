@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_COOKIE['status']))
+    if(isset($_COOKIE['status'])|| isset($_COOKIE['remstatus']))
     {
         ?>
 <!DOCTYPE html>

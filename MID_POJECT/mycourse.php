@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_COOKIE['status']))
+    if(isset($_COOKIE['status'])|| isset($_COOKIE['remstatus']))
     {
         ?>
         <!DOCTYPE html>
@@ -57,7 +57,7 @@
                     <li><a href="mycourse.php">Courses</a></li>
                     <li><a href="progress.html">Progress</a></li>
                     <li><a href="blog.html">Blogs</a></li>
-                    <li><a href="logout.html">Logout</a></li>
+                    <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
 
