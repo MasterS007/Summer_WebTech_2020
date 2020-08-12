@@ -145,17 +145,14 @@ div.verticleLine
     margin-top: -200px;
 
   }
-  fieldset.editfield
+  fieldset.profile_div
   {
     background-color: white;
     border-radius: 5px;
-    border-color: #ddd;
-    border:0;
+    border:1px solid #ddd;
     box-sizing: border-box;
     width: max-content;
     position: relative;
-    
-  
     
   }
 
@@ -165,7 +162,7 @@ legend.mainLegend
     color: #666;
 }
   
- div form fieldset.editfield  table.table1
+ div form fieldset.profile_div table.profile_table
   {
     padding-left:-10px;
     margin-top: 12%;
@@ -175,26 +172,28 @@ legend.mainLegend
      width:100%; 
   }
 
-  table.table1 td
+  table.profile_table td
   {
     color:#555;
-  border:2px;
+    padding-right: 20px;
+   border:2px;
   }
- input
-{
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-     border-radius: 5px;
-     border: 1px solid #ddd;
-     color:#666;
-     
-    }
+
+  a{
+    text-decoration-line: none;
+    color:darkcyan;
     
-input:focus {
-     outline: none;
-     border: 1px solid #ddd;
-     color: #2d9fd9;
-}
+  }
+  a.propic
+  {
+
+    
+    margin-left: 35px;
+    
+ 
+  }
+
+
 
 /*Footer*/
 footer{

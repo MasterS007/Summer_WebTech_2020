@@ -60,7 +60,7 @@
                 <li><a href="files.php">Files</a></li>
                 <li><a href="#">Assignments</a></li>
                 <li><a href="#">Grades</a></li>
-                <li><a href="#">Settings</a></li>
+             
             </ul>
         </div>
 

@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="all_designs/profile_design.css"> <link rel>
+        <link rel="stylesheet" href="all_designs/profileview.css"> <link rel>
         <title>Profile</title>
     </head>
     <body>
@@ -48,22 +48,21 @@
         </header>
     
         
-        <section>
+        <main>
             <div class="verticleLine"></div>
             <h4 class="section-heading"><a href="dashboard.php">Sirajum Munira</a></h4>
             <div class="accountStuff">
                     <ul class="stuff">
                         <li><a href="profile.php">Profile</a></li>
                         <li><a href="mycourse.php">Courses</a></li>
-                        <li><a href="progress.html">Progress</a></li>
                         <li><a href="blog.html">Blogs</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </ul>
             </div>
-                <!--Profile Table-->
-            <div class="profile_div">
-                <form method="" action="">
-                    <fieldset>
+               
+            <div >
+                <form>
+                    <fieldset class="profile_div">
                     <legend class="mainLegend"><b>PROFILE</b></legend>
                         <table class="profile_table">
                             <tr>
@@ -71,22 +70,9 @@
                                 <td>:</td>
                                 <td><?php echo $_COOKIE['name'];?></td>
                                 <td rowspan="7">	
-                                      <?php
-                                        session_start();
-                                        if(isset($_COOKIE['updated']))
-                                        {
-                                        ?>	
-                                            <img width="128" src="<?php echo $_COOKIE['pic'];?>"/>
-                                            
-                                      <?php 
-                                        }
-                                        else
-                                        {
-                                        ?>
+                                      
                                         <img width="128" src="all_designs/images/profile.ico"/>
-                                      <?php 
-                                        }
-                                        ?>	
+                        
                                         <br/>
                                         <a class="propic" href="changepicture.php">Change</a>
                                 </td>
@@ -113,12 +99,11 @@
                                     <td colspan="3"><hr/></td>
                                 </tr>
                         </table>
-                    
                         <a href="edit_profile.php"> Edit Profile </a>	
                     </fieldset>	
                 </form>       
             </div>
-        </section>
+        </main>
 
         <footer>
        </footer>
