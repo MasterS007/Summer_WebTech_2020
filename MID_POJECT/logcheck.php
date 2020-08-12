@@ -27,7 +27,6 @@ session_start();
            $date =$dob[2];
             if(count($data)> 0)
             {
-                
                 if(isset($_POST['checkRemember']))
                 {
                   setcookie('checkRemember',$_POST['checkRemember'], time()+360000, '/');
@@ -41,8 +40,6 @@ session_start();
                   setcookie('month', $month, time()+315360000, '/');
                   setcookie('year', $year, time()+315360000, '/');
                   setcookie('remstatus', "always ok", time()+315360000, '/');
-                  
-                 
                   header('location: dashboard.php');
                 // echo "login successfull";
                  

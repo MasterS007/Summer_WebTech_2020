@@ -83,7 +83,7 @@
                                         else
                                         {
                                         ?>
-                                        <img width="128" src="images/profile.ico"/>
+                                        <img width="128" src="all_designs/images/profile.ico"/>
                                       <?php 
                                         }
                                         ?>	
@@ -101,7 +101,7 @@
                                 <tr>
                                     <td>Gender</td>
                                     <td>:</td>
-                                    <td><?php echo $_COOKIE['gender'];?>Female</td>
+                                    <td><?php echo $_COOKIE['gender'];?></td>
                                 </tr>
                                 <tr><td colspan="3"><hr/></td></tr>
                                 <tr>

@@ -32,11 +32,11 @@ if(isset($_COOKIE['checkRemember']))
                 <table class="table1">
                     <tr>
                         <td>User Name :</td>
-                        <td><input type="text" name="userName" value="<?php echo $_COOKIE['uname'] ?>"></td>
+                        <td><input type="text" name="userName" value="<?php echo $_COOKIE['uname'];?>"></td>
                     </tr>
                     <tr>
                         <td>Password :</td>
-                        <td><input type="password" name="password" value="<?php echo $_COOKIE['password'] ?>"></td>
+                        <td><input type="password" name="password" value="<?php echo $_COOKIE['password']; ?>"></td>
                     
                     </tr>
                     
@@ -48,7 +48,7 @@ if(isset($_COOKIE['checkRemember']))
                 </table>
                
                 <hr>
-                <input  type="checkbox" name="checkRemember" sautocomplete="on" checked><i class="RememberMe">Remember Me</i>
+                <input  type="checkbox" name="checkRemember" autocomplete="on" checked><i class="RememberMe">Remember Me</i>
                 <br><br>
                 <input type="submit" name="submit" value="Login"> <a href="registration.html">Register</a>
                 
@@ -102,7 +102,6 @@ else
                     <tr>
                         <td>Password :</td>
                         <td><input type="password" name="password"></td>
-                    
                     </tr>
                     <tr>
                         <td colspan='2'>

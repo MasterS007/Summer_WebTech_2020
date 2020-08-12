@@ -78,27 +78,24 @@ ul.navigation li.searchBox
      background-color: white;
      width: 130px;
      padding:3px 30px ;
-     /*-webkit-transition: width 0.4s ease-in-out;
-     transition: width 0.4s ease-in-out;*/
+
   }
   ul.navigation li.searchBox input[type=text]:focus 
   {
     width: 75%;
   }
 
-  div.verticleLine
-  {
+div.verticleLine
+{
     border-left: 2px solid #ddd;
     height: 700px;
     position: absolute;
     left: 20%;
     margin-left:-3px;
     top: 88px;
-  }
+}
 
-  /*Main */
-
-
+/*Main */
 main 
 {
     background-color: white;
@@ -126,9 +123,9 @@ h4.class_headeing
 
  div.class_materials ul li a
  {
-     text-decoration-line: none;
-     color: darkgoldenrod;
-     position: relative;
+    text-decoration-line: none;
+    color: darkgoldenrod;
+    position: relative;
  }
 
  legend.title
@@ -136,34 +133,45 @@ h4.class_headeing
      color:#567;
      font-weight: bold;
  }
- div.students form fieldset
+ div.comments form
  {
      margin-left:21%;
      margin-top:-280px;
      height:500px;
      width:75%;
-     border:1px solid #ddd;
-     border-radius: 5px;
-     
  }
-
- table.student_table td hr
+ 
+ form input.btncomment
  {
-     width:980px;
+     margin-left: -15px;
+     box-sizing:border-box;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
  }
-
-
-table.student_table td
+ form textarea
  {
-    border-collapse: collapse;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: -15px;
     position: relative;
-    text-align: center;
-    top:30px;
-    padding-right: 50px;
-    padding-bottom:5px;
-    color:#666;
-    
+    resize: none;
  }
+ 
+ form fieldset.commentField{
+
+    margin-left:-10px;
+    margin-top: 20px;
+    height: 400px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    overflow: auto;
+    position: relative;
+ }
+
 
  /*Footer*/
 footer{

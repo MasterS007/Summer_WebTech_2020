@@ -7,6 +7,7 @@ if(isset($_POST['submit']))
 	   $date =$_POST['date'];
 	   $month = $_POST['month'];
 	   $year = $_POST['year'];
+	   $gender=$_POST['gender'];
 	   
 	   
 	   if(empty($name)||empty($email)||!isset($_POST['gender'])||empty($date)||empty($month)||empty($year))
@@ -25,7 +26,7 @@ if(isset($_POST['submit']))
 		  $gender = 'Female';
 		}
 
-		elseif($_POST['gender']=='Female'){
+		else{
 		  $gender = 'Other';
 		}
 		

@@ -1,8 +1,8 @@
-<!--<?php
+<?php
 
     if(isset($_COOKIE['status'] )|| isset($_COOKIE['remstatus']))
     {
-        ?> -->
+        ?>
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@
     <header>
          <nav>
              <select class="comboBox">
-                 <option value="Course" selected disabled hidden>Cources</option>
+                 <option value="Course" selected disabled hidden>Courses</option>
                  <optgroup label="Science">
                         <option value="Physics">Physics</option>
                         <option value="Chemistry">Chemistry</option>
@@ -68,23 +68,24 @@
             </section>
 
             <div class="addingClass">  
-                  <form action="" method="POST">
+                  <form action="addclass_check.php" method="POST">
                     <fieldset>
-                        <legend calss="title">Add new class</legend>
+                        <legend>Add new class</legend>
+
                         <table class="new_class">
                             <tr>
                                 <td>Class Name</td>
                             </tr>
                             <tr>
-                                <td><input type="text" name="add_class" placeholder="e.g,Class:Computer Fundamental"></td>
+                                <td><input class="class_name" type="text" name="class_name" placeholder="e.g,Class:Computer Fundamental"></td>
                             </tr>
                             <tr>
                                 <td>Choose Course</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <select class="chooseCourse">
-                                        <option value="Course" selected disabled hidden>Cources</option>
+                                    <select class="chooseCourse" name="choose_course">
+                                        <option value="Course" selected disabled hidden>Courses</option>
                                         <optgroup label="Science">
                                                <option value="Physics">Physics</option>
                                                <option value="Chemistry">Chemistry</option>
@@ -112,10 +113,12 @@
                                 </td>
                             </tr>
                         </table>
-                    </fieldset>
-                    <input type="submit" name= "submit" value="Confirm Class">
-			        <input type="reset">
-
+                        
+                     </fieldset>
+                     <fieldset class="buttonfield">
+                        <input type="submit" name= "submit" value="Confirm Class">
+			           <input type="reset">
+                     </fieldset>
                   </form>
                 
            </div>
@@ -125,7 +128,7 @@
     </footer>
     </body>
 </html>
-<!--
+
 <?php
     }
     else
@@ -134,4 +137,4 @@
     }
 
 ?>
--->
+

@@ -163,12 +163,7 @@ ul.navigation li.searchBox
       font-style: italic;
       
   }
-
-  legend.title
- {
-     color:#567;
-     font-weight: bold;
- }
+  
  div.addingClass form fieldset
  {
      margin-left:15%;
@@ -176,8 +171,21 @@ ul.navigation li.searchBox
      height:300px;
      width:75%;
      border:1px solid #ddd;
-     border-radius: 5px;
-     
+     border-radius: 5px; 
+ }
+
+ legend
+ {
+     color:#567;
+     font-weight: bold;
+ }
+
+ div.addingClass form fieldset.buttonfield
+ {
+     margin-left:78%;
+     border:0;
+     padding-left: 25px;
+     width:max-content;
  }
 
 table.new_class td
@@ -204,20 +212,23 @@ table.new_class td
     
 }
 
-input{
+.new_class td input[type=text]{
+
+     box-sizing:border-box;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
      border-radius: 5px;
      border: 1px solid #ddd;
      color:#666;
+
      
     }
     
-input:focus {
+.new_class td input[type=text]:focus {
      outline: none;
-     border: 1px solid #ddd;
      color: #2d9fd9;
 }
+
 
  /*Footer*/
 footer{
