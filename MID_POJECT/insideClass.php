@@ -57,7 +57,7 @@
             <ul>
                 <li><a href="insideClass.php">Students</a></li>
                 <li><a href="postComment.php">Post</a></li>
-                <li><a href="#">Files</a></li>
+                <li><a href="files.php">Files</a></li>
                 <li><a href="#">Assignments</a></li>
                 <li><a href="#">Grades</a></li>
                 <li><a href="#">Settings</a></li>
