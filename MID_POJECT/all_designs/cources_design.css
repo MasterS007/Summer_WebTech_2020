@@ -91,7 +91,7 @@ ul.navigation li.searchBox
   div.verticleLine
   {
     border-left: 2px solid #ddd;
-    height: 800px;
+    height: 600px;
     position: absolute;
     left: 22%;
     margin-left: -3px;
@@ -101,17 +101,17 @@ ul.navigation li.searchBox
   main 
   {
     background-color: white;
+    background-size: 100%;
     margin-left: 12%;
-    margin-top: 40px;
-    height: auto;
-    overflow:auto;
-    
+    margin-top: 35px;
+    height: 750px;
+    overflow: auto;
   }
   .section-heading a
   {
       color: #5899; 
       text-decoration-style: none;
-    text-decoration-line: none; 
+      text-decoration-line: none; 
 
   }
   ul.stuff li
@@ -139,97 +139,64 @@ ul.navigation li.searchBox
     box-sizing: border-box;
    
   }
+   
+ div.editcourse button
+  {
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 80%;
+      top: -220px;
+      color:#666;
+      font-size: 14px;
+      position: relative;
+  }
+  
+  div.editcourse button:hover
+  {
+      color:darkcyan;
+  }
 
-  h2.welcomeheading
+  div.myCources
   {
-      margin-top: -265px;    
-      margin-left:75%;
-  }
-  a
-  {
-    text-decoration-line: none;
-  }
-
-  div hr
-  {
-    width:96%;
-    border:1px solid #ddd;
-  }
- 
-  div.wel 
-  {
-    margin-left:10% ;
-  }
-  ul.wlist li 
-  {
-    display: inline-block;
+    margin-left: 15%;
+    top:-300px;
+    border: 1px dotted #ddd;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: max-content;
     padding-right: 20px;
     position: relative;
-   
   }
-  ul.wlist li a
+  
+  div.myCources ul li
   {
-    color:#666;
-  }
-
-  ul.wlist li a:active
-  {
-    border-bottom: 3px solid darkcyan;
+    display:block;
+    color: #333;
+    margin-left: -20px;
     
   }
 
-   legend.title
-   {
-       color:#567;
-       font-weight: bold;
-   }
-   div.students-list form fieldset
-   {
-       margin-left:15%;
-       margin-top:40px;
-       height:500px;
-       width:80%;
-       border:1px solid #ddd;
-       border-radius: 5px;
-      
-   }
-  
-   table.student_table td hr
+  h5
   {
-    width: 123%;
-    margin-left: -50px;
+    margin-left: -20px;
+    margin-bottom: 8px;
+    color:lightseagreen;
   }
-  
-  
-  table.student_table th
-  {
-    padding-left:55px;
-    border-collapse: collapse;
-    position: relative;
-    text-align: center;
-    top:30px;
-    padding-right: 150px;
-    padding-bottom:5px;
-    color: #579;
-   
-  }
-   table.student_table td
-   {
-      padding-left:55px;
-      border-collapse: collapse;
-      position: relative;
-      top:30px;
-      padding-right: 150px;
-      padding-bottom:5px;
-      color:#666;
-      text-align: center;
-      
-   }
 
-   /*Footer*/
+  section h3.heading
+  {
+    margin-left: 15%;
+    top:-300px;
+    position: relative;
+    color:#666;
+  }
+
+  /*Footer*/
 footer{
   background: darkcyan;
   padding:40px;
-  margin-top: 100px;
   color: white;
+  margin-top: 70px;
 }

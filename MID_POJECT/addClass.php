@@ -63,8 +63,6 @@
             </div>
             <section>
                 <h2 class="welcomeheading">Welcome <?php echo $_COOKIE['name'];?></h2>
-                <h5 class="addingSchool"><a href="#">Add your organization</a></h5> 
-                
             </section>
 
             <div class="addingClass">  

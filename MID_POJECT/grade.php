@@ -1,13 +1,14 @@
 <?php
+
     if(isset($_COOKIE['status'])|| isset($_COOKIE['remstatus']))
     {
-       ?>
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="all_designs/comment_design.css">
+    <link rel="stylesheet" href="all_designs/insideclassdesign.css">
     <title>Class Materials</title>
 </head>
 <body>
@@ -59,44 +60,36 @@
                 <li><a href="files.php">Files</a></li>
                 <li><a href="#">Assignments</a></li>
                 <li><a href="grade.php">Grades</a></li>
+             
             </ul>
         </div>
 
-        <div class="comments">
-            <form action="comment_check.php" method="POST">
-            <fieldset class="commentField">
-                <?php echo "All Comments";?><hr><br>
-                <?php
-                     
-                   $readcom =fopen("comments.txt","r+t");
-                    if(filesize('comments.txt')!=0)
-                    {
-                        while(!feof($readcom))
-                        {    
-                        $showcom =fgets($readcom, filesize('comments.txt'));
-                        $data = explode("/r/n",trim($showcom,"/r/n") );
-                            
-                            foreach($data as $value)
-                            {
-                                echo $value; ?><hr><br>
-                                <?php
-                            }
-                            
-                        
-                                   
-                        }
-                    }
-                    else
-                    {
-                        echo "no comments";
-                    }
-                   
-                    fclose($readcom);
-                ?>
-            </fieldset>
-            <textarea name="comment" placeholder="Write comment here"></textarea>
-            <input  type="submit" name="submit" value="comment" class="btncomment">
-            </form>    
+        <div class="students">
+            <form>
+                <fieldset>
+                   <legend class="title">Grade List</legend>
+                   <table class="student_table">
+                    <tr>
+                        <td>Student Name</td>
+                        <td>Class</td>
+                        <td>Grade</td>
+
+                    <tr>
+                    <tr>
+                        <td colspan="3"><hr></td>
+                    </tr>
+                    <tr>
+                        <td>Kakashi Hatake</td>
+                        <td>Programming Language</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><hr></td>
+                    </tr>
+                    
+                   </table>        
+                </fieldset>
+            </form>
         </div>
     </main>
 
@@ -106,12 +99,9 @@
 </body>
 </html>
 <?php
-   
-    
-}
-else
-{
-    header("location:login.php");
-}
-
+    }
+    else
+    {
+        header("location:login.php");
+    }
 ?>

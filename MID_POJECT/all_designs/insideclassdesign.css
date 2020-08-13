@@ -51,7 +51,6 @@ ul.navigation li.logo a
     border-top: none;
     border-radius: 5px;
     font-size: 14px;
-    color: #666;
      
     
 }
@@ -87,142 +86,87 @@ ul.navigation li.searchBox
     width: 75%;
   }
 
-  /*Middle Part*/
-
   div.verticleLine
   {
     border-left: 2px solid #ddd;
-    height: 600px;
+    height: 700px;
     position: absolute;
-    left: 22%;
-    margin-left: -3px;
+    left: 20%;
+    margin-left:-3px;
     top: 88px;
   }
 
-  main 
-  {
+  /*Main */
+
+
+main 
+{
     background-color: white;
-    margin-left: 12%;
+    background-size: 100%;
+    margin-left:40px;
     margin-top: 40px;
-    height:750px;
-    overflow:auto;
+    height: 750px;
+    overflow: auto;
     
-  }
-  .section-heading a
-  {
-      color: #5899; 
-      text-decoration-style: none;
-    text-decoration-line: none; 
+}
 
-  }
-  ul.stuff li
-  {
-     
-      margin-left:-40px;
-      position: relative;
-      list-style-type: none; 
-      padding-bottom: 20px;
-  }
-  
-
-  ul.stuff li a
-  {
-   
-    padding:0px 20px ;  
-    color: darkgoldenrod;
-    text-decoration-style: none;
-    text-decoration-line: none;  
-  }
-  ul.stuff li a:hover
-  {   
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-   
-  }
-
-  h2.welcomeheading
-  {
-      margin-top: -265px;    
-      margin-left:75%;
-  }
-  a
-  {
-    text-decoration-line: none;
-  }
-
-  div hr
-  {
-    width:96%;
-    border:1px solid #ddd;
-  }
-  
-  
- div.addingClass form fieldset
+h4.class_headeing
+{
+    color: #5899; 
+}
+ 
+ div.class_materials ul li
  {
-     margin-left:15%;
-     margin-top:-2px;
-     height:300px;
-     width:75%;
-     border:1px solid #ddd;
-     border-radius: 5px; 
+    margin-left:25px;
+    position: relative;
+    list-style-type: none; 
+    padding-bottom: 20px;
+    top:0px;
  }
 
- legend
+ div.class_materials ul li a
+ {
+     text-decoration-line: none;
+     color: darkgoldenrod;
+     position: relative;
+ }
+
+ legend.title
  {
      color:#567;
      font-weight: bold;
  }
 
- div.addingClass form fieldset.buttonfield
+ div.students form fieldset
  {
-     margin-left:78%;
-     border:0;
-     padding-left: 25px;
-     width:max-content;
+    
+    margin-left:21%;
+    margin-top: -240px;
+    position: relative;
+    height:500px;
+     width:75%;
+     border:1px solid #ddd;
+     border-radius: 5px;
+     
  }
 
-table.new_class td
+ table.student_table td hr
  {
-   
+     width:980px;
+ }
+
+
+table.student_table td
+ {
     border-collapse: collapse;
     position: relative;
-    text-align: left;
+    text-align: center;
     top:30px;
-    padding-bottom:15px;
+    padding-right: 50px;
+    padding-bottom:5px;
     color:#666;
     
  }
-
- .chooseCourse
-{   
-    position: relative;
-    width: 50%;
-    height: 26px;
-    border:1PX solid #ddd;
-    border-radius: 5px;
-    font-size: 14px; 
-    color: #555; 
-    
-}
-
-.new_class td input[type=text]{
-
-     box-sizing:border-box;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-     border-radius: 5px;
-     border: 1px solid #ddd;
-     color:#666;
-
-     
-    }
-    
-.new_class td input[type=text]:focus {
-     outline: none;
-     color: #2d9fd9;
-}
-
 
  /*Footer*/
 footer{

@@ -56,7 +56,7 @@
                 <ul class="stuff">
                     <li><a href="profile.php">Profile</a></li>
                     <li><a href="mycourse.php">Courses</a></li>
-                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="blog.php">Blogs</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>

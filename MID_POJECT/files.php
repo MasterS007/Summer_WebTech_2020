@@ -13,7 +13,7 @@ if(isset($_COOKIE['status'])|| isset($_COOKIE['remstatus']))
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="all_designs/fileUpload.css">
+<link rel="stylesheet" href="all_designs/fileupload_design.css">
 <title>Class Files</title>
 </head>
 <body>
@@ -64,7 +64,7 @@ if(isset($_COOKIE['status'])|| isset($_COOKIE['remstatus']))
             <li><a href="postComment.php">Post</a></li>
             <li><a href="files.php">Files</a></li>
             <li><a href="#">Assignments</a></li>
-            <li><a href="#">Grades</a></li>
+            <li><a href="grade.php">Grades</a></li>
     
         </ul>
     </div>

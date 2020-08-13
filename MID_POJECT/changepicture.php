@@ -55,20 +55,19 @@
                     <ul class="stuff">
                         <li><a href="profile.php">Profile</a></li>
                         <li><a href="mycourse.php">Courses</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="blog.php">Blogs</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </ul>
             </div>
             <div>
-                <form method="POST" action = "changepicCheck" enctype="multipart/form-data">
+                <form method="POST" action = "changepicCheck.php" enctype="multipart/form-data">
                 <fieldset class="editfield">
                     <legend class="mainLegend"><b>PROFILE PICTURE</b></legend>
-                        <img width="128" src="images/profile.ico"/> 
+                        <img width="128" src="all_designs/images/profile.ico"/> 
                         <br />
                         <input type="file" name ='picture'>
                         <hr />
                         <input type="submit" name="submit" value="Submit">
-                
                 </fieldset>
                 </form>
             </div>

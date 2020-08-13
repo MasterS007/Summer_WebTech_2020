@@ -1,20 +1,21 @@
 <?php
-    
-    session_start();
+
 
     if(isset($_REQUEST['submit']))
     {
-        $targetdir ='profilePic/'.$_FILES['picture']['name'];
-        if(!isset($_REQUEST['picture']))
+        setcookie('updated', "updated", time()-360000,"/");
+        $targetdir ='profile_picture/'.$_FILES['picture']['name'];
+        
+        
+        if(move_uploaded_file($_FILES['picture']['tmp_name'],$targetdir))
         {
-            echo "No picture selected";
+            
+            setcookie('updated', "updated", time()+360000,"/");
+            header("location:profile.php");
         }
         else
         {
-            setcookie('picture',$_REQUEST['picture'], time()+36000,"/");
-            setcookie('pic', "image/Pidgin.png", time()+36000,"/");
-            setcookie('updated', "updated", time()+36000,"/");
-            header("location:profile.php");
+            echo "upload failed";
         }
     }
     else

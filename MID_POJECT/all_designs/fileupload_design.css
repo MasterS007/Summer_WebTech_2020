@@ -51,7 +51,6 @@ ul.navigation li.logo a
     border-top: none;
     border-radius: 5px;
     font-size: 14px;
-    color: #666;
      
     
 }
@@ -87,142 +86,108 @@ ul.navigation li.searchBox
     width: 75%;
   }
 
-  /*Middle Part*/
-
   div.verticleLine
   {
     border-left: 2px solid #ddd;
-    height: 600px;
+    height: 700px;
     position: absolute;
-    left: 22%;
-    margin-left: -3px;
+    left: 20%;
+    margin-left:-3px;
     top: 88px;
   }
 
-  main 
-  {
+  /*Main */
+
+
+main 
+{
     background-color: white;
-    margin-left: 12%;
+    background-size: 100%;
+    margin-left:40px;
     margin-top: 40px;
-    height:750px;
-    overflow:auto;
+    height: 750px;
+    overflow: auto;
     
-  }
-  .section-heading a
-  {
-      color: #5899; 
-      text-decoration-style: none;
-    text-decoration-line: none; 
+}
 
-  }
-  ul.stuff li
-  {
-     
-      margin-left:-40px;
-      position: relative;
-      list-style-type: none; 
-      padding-bottom: 20px;
-  }
-  
-
-  ul.stuff li a
-  {
-   
-    padding:0px 20px ;  
-    color: darkgoldenrod;
-    text-decoration-style: none;
-    text-decoration-line: none;  
-  }
-  ul.stuff li a:hover
-  {   
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-   
-  }
-
-  h2.welcomeheading
-  {
-      margin-top: -265px;    
-      margin-left:75%;
-  }
-  a
-  {
-    text-decoration-line: none;
-  }
-
-  div hr
-  {
-    width:96%;
-    border:1px solid #ddd;
-  }
-  
-  
- div.addingClass form fieldset
+h4.class_headeing
+{
+    color: #5899; 
+}
+ 
+ div.class_materials ul li
  {
-     margin-left:15%;
-     margin-top:-2px;
-     height:300px;
-     width:75%;
-     border:1px solid #ddd;
-     border-radius: 5px; 
+    margin-left:25px;
+    position: relative;
+    list-style-type: none; 
+    padding-bottom: 20px;
+    top:0px;
  }
 
- legend
+ div.class_materials ul li a
+ {
+     text-decoration-line: none;
+     color: darkgoldenrod;
+     position: relative;
+ }
+
+ legend.title_file
  {
      color:#567;
      font-weight: bold;
  }
-
- div.addingClass form fieldset.buttonfield
+ div.files form
  {
-     margin-left:78%;
-     border:0;
-     padding-left: 25px;
-     width:max-content;
- }
-
-table.new_class td
- {
+     margin-left: 20%;
+     margin-top:-260px;
+     position: relative;
    
-    border-collapse: collapse;
-    position: relative;
-    text-align: left;
-    top:30px;
-    padding-bottom:15px;
-    color:#666;
-    
  }
 
- .chooseCourse
-{   
-    position: relative;
-    width: 50%;
-    height: 26px;
-    border:1PX solid #ddd;
-    border-radius: 5px;
-    font-size: 14px; 
-    color: #555; 
-    
-}
+ fieldset.upload_files
+ {
+     
+     margin-top:10px;
+     height:600px;
+     width:95%;
+     border:1px solid #ddd;
+     border-radius: 5px;
+     position: relative;
+     overflow: auto;
+     
+ } 
 
-.new_class td input[type=text]{
-
-     box-sizing:border-box;
+.btn_upload{
+     
+     margin-left:87%;
+     margin-top:-12px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
      border-radius: 5px;
+     width:10%;
+     padding:5px;
      border: 1px solid #ddd;
      color:#666;
-
+     position: relative; 
      
     }
-    
-.new_class td input[type=text]:focus {
-     outline: none;
-     color: #2d9fd9;
-}
+ .uploadbox
+ {   
+     position: relative;
+      margin-left:82%;
+      padding-bottom: 10px;
+      margin-top: -12px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background: white;
+      width:18%;
+      border:none;
+      color:#567;
+  
+ }
 
+  
 
  /*Footer*/
 footer{

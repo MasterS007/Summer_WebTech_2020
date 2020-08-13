@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="all_designs/insideclass.css">
+    <link rel="stylesheet" href="all_designs/insideclassdesign.css">
     <title>Class Materials</title>
 </head>
 <body>
@@ -59,7 +59,7 @@
                 <li><a href="postComment.php">Post</a></li>
                 <li><a href="files.php">Files</a></li>
                 <li><a href="#">Assignments</a></li>
-                <li><a href="#">Grades</a></li>
+                <li><a href="grade.php">Grades</a></li>
              
             </ul>
         </div>

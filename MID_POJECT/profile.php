@@ -55,7 +55,7 @@
                     <ul class="stuff">
                         <li><a href="profile.php">Profile</a></li>
                         <li><a href="mycourse.php">Courses</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
+                        <li><a href="blog.php">Blogs</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </ul>
             </div>
@@ -71,10 +71,28 @@
                                 <td><?php echo $_COOKIE['name'];?></td>
                                 <td rowspan="7">	
                                       
-                                        <img width="128" src="all_designs/images/profile.ico"/>
-                        
-                                        <br/>
-                                        <a class="propic" href="changepicture.php">Change</a>
+                                <?php
+									session_start();
+									if(isset($_COOKIE['updated']))
+									{
+                                        
+                                        $file_dir=scandir("profile_picture");
+                                        $newpic_pos=2;
+                                        
+									?>
+										<img width="128" height="200" src="<?php echo "profile_picture/".$file_dir[$newpic_pos];?>"/>
+										
+									<?php 
+									}
+									else
+									{
+									?>
+				                 	   <img width="128" src="all_designs/images/profile.ico"/>
+									<?php 
+									}
+									?>
+									<br/>
+                                     <a class="propic" href="changepicture.php">Change</a>
                                 </td>
                                 </tr>		
                                 <tr><td colspan="3"><hr/></td></tr>

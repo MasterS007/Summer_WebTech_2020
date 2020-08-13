@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="all_designs/cources.css"> <link rel>
+    <link rel="stylesheet" href="all_designs/cources_design.css"> <link rel>
     <title>My Course</title>
 </head>
 <body>
@@ -55,8 +55,8 @@
                 <ul class="stuff">
                     <li><a href="profile.php">Profile</a></li>
                     <li><a href="mycourse.php">Courses</a></li>
-                    <li><a href="progress.html">Progress</a></li>
-                    <li><a href="blog.html">Blogs</a></li>
+                    
+                    <li><a href="blog.php">Blogs</a></li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
