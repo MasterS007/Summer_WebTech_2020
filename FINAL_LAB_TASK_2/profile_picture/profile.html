@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="profileCheck.js"></script>
+    <title>Profile Validation</title>
+</head>
+<body>
+    <form action="profileCheck.php" method="POST">
+       
+        <fieldset style="width: 300px;">
+         <legend>Profile Picture</legend>
+        User Id <input type="number" id="userId" name="userId" style="margin-bottom: 10px;"><br>
+        Picture<input type="file"  id="fileName" name ="fileName" style="margin-left:8px; position: absolute;" >
+        <hr>
+    </fieldset><i id="profileMsg"></i>
+        
+        <input type="submit" name="submit" value="Submit" style="margin-top: 10px;">
+
+    </form>
+    
+    
+</body>
+</html>
