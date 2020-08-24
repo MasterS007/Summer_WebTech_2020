@@ -7,8 +7,8 @@
     <title>Gender Validation</title>
 </head>
 <body>
-    <form action="bloodgroupCheck.php" method="POST">
-        Blood Group<select name="blood" id="bloodgroup" size="1px" >
+    <form action="bloodgroupCheck.php" onsubmit="return Validate()" method="POST">
+        Blood Group <select name="blood" id="bloodgroup" size="1px" onmouseout="eMpty()" onclick="Remover()" onmouseover="Remover()">
             <option value=""></option>
             <option value="A+">A+</option>
             <option value="B+">B+</option>
@@ -18,7 +18,7 @@
             <option value="B-">B-</option>
             <option value="O-">O-</option>
             <option value="AB-">AB-</option>
-        </select>
+        </select>   <i id="bloodMsg"></i>
         <hr width="10%" style="margin-left: 0px;">
         <input type="submit" name="submit" value="Submit" style="margin-top: 10px;">
 
