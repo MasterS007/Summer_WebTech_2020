@@ -7,15 +7,16 @@
     <script type="text/javascript" src="genderCheck.js"></script>
 </head>
 <body>
-    <form action="genderCheck.php" method="POST">
-        <fieldset style="width: 200px;">
-            <legend>Gender</legend>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender" >Female
-            <input type="radio" name="gender" >Other
-        </fieldset>
-        <input type="submit" name="submit" value="Submit" style="margin-top: 10px;">
+    <form action="genderCheck.php" onsubmit="return Validate()" method="POST">
 
+        <fieldset style="width: 200px;" >
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="Male"  onclick="Remover()" onmouseover="Remover()" onmouseout="eMpty()" >Male
+            <input type="radio" name="gender" id="Female" onclick="Remover()"onmouseover="Remover()" onmouseout="eMpty()" >Female
+            <input type="radio" name="gender" id="Other"  onclick="Remover()" onmouseover="Remover()" onmouseout="eMpty()" >Other
+        </fieldset>
+        <i id="genderMsg"></i><br>
+        <input type="submit" name="submit" value="Submit" style="margin-top: 10px;">
     </form>
     
     
