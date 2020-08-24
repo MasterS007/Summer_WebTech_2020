@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="nameCheck.js"></script>
     <title>Name Input Validation</title>
 </head>
 <body>
 
-    <form action="registration.php" method="POST">
+    <form action="nameCheck.php" onsubmit="return Validate()"  method="POST" >
         <header>Name</header><br>
-        <input type="text" name="name">
-        <br> <input type="submit" name="" value="Submit" style="margin-top: 10px;">
+        <input type="text" id="name" name="name" onkeyup="Remover()" onblur="eMpty()" > <i id="nameMsg"></i>
+        <br>
+        <input type="submit" name="submit" value="Submit" style="margin-top: 10px;">
     </form>
     
 </body>
