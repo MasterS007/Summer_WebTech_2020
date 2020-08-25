@@ -39,11 +39,11 @@
         <tr height = 45px>
             <td style="font-family: Calibri;font-size:18px ; white-space: pre;"> Date of Birth </td>
             <td style="padding:4px; font-family: Calibri; font-size:18px;" >
-                <input type="text" name="date" size="1px">/
-                <input type="text" name="month" size="1px">/
-                <input type="text" name="year" size="2.5px">  <i style="font-family:Trebuchet MS;font-size:14px;white-space:pre;"> (dd/mm/yyyy)</i>
+                <input type="text" id="date" name="date" size="1px" onkeyup="dRemover()" onblur="deMpty()" onclick="dRemover()">/
+                <input type="text" id="month" name="month" size="1px" onkeyup="dRemover()" onblur="deMpty()" onclick="dRemover()">/
+                <input type="text" id="year" name="year" size="2.5px" onkeyup="dRemover()" onblur="deMpty()" onclick="dRemover()">  <i style="font-family:Trebuchet MS;font-size:14px;white-space:pre;"> (dd/mm/yyyy)</i>
             </td>
-            <td ></td>
+            <td id="dobMsg"></td>
         </tr>
 
         <tr height = 45px>
