@@ -33,7 +33,7 @@ var i;
     }
     
  
-    else if( name>='A' && name<='Z' || name>='a'&& name<='z')
+    else if( name>='A' && name<='Z' || name>='a'&& name<='z' || name=='-'||name=='.')
     {
         
                 window.nvalid =true;
