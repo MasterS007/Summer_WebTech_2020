@@ -168,6 +168,59 @@ function bRemover()
 }
 
 
+function dgeMpty()
+{ 
+    if(document.getElementById("SSC").checked)
+    {
+        window.gvalid=true;
+    }
+    else if(document.getElementById("HSC").checked)
+    { 
+        window.gvalid=true;
+    }
+    else if(document.getElementById("BSc").checked)
+    {
+        window.gvalid=true;
+    }
+    else if(document.getElementById("MSc").checked)
+    {
+        window.gvalid=true;
+    }
+    else
+    {
+        document.getElementById("degreeMsg").innerHTML="please choose at least one degree";
+        window.gvalid=false;
+       
+    }
+}
+
+function dgRemover()
+{
+    document.getElementById("degreeMsg").innerHTML="";
+}
+
+function eMptyPicture()
+{
+    var picture = document.getElementById("fileName").value;
+     if(picture=="")
+    {
+        document.getElementById("pictureMsg").innerHTML="picture can't be empty";
+        
+        window.evalid=false;
+    }
+    else
+    {
+        window.evalid=true;
+    }
+
+}
+
+function pRemover()
+{
+    
+    document.getElementById("pictureMsg").innerHTML="";
+}
+
 function Validate()
 {
    

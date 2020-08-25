@@ -69,18 +69,20 @@
         <tr height = 45px>
             <td style="font-family: Calibri;font-size:18px ; white-space: pre;"> Degree </td>
             <td style="padding:4px; font-family: Calibri; font-size:16px;" >
-                <input type="checkbox" name="degree" style="border-radius:1px ;">SSC
-                <input type="checkbox" name="degree" >HSC
-                <input type="checkbox" name="degree" >BSc.
-                <input type="checkbox" name="degree" >MSc.
+                <input type="checkbox" id="SSC" name="degree" style="border-radius:1px ;" onclick="dgRemover()" onmouseover="dgRemover()" onmouseout="dgeMpty()">SSC
+                <input type="checkbox" id="HSC" name="degree" onclick="dgRemover()" onmouseover="dgRemover()" onmouseout="dgeMpty()">HSC
+                <input type="checkbox" id="BSc" name="degree" onclick="dgRemover()" onmouseover="dgRemover()" onmouseout="dgeMpty()">BSc.
+                <input type="checkbox" id="MSc" name="degree" onclick="dgRemover()" onmouseover="dgRemover()" onmouseout="dgeMpty()" >MSc.
             </td>
-            <td ></td>
+            <td id="degreeMsg" ></td>
         </tr>
 
         <tr height = 45px>
             <td style="font-family: Calibri;font-size:18px ; white-space: pre;"> Photo </td>
             <td colspan="2" style="padding:4px;font-family: Gill Sans MT; font-size:14px; " >
-                 <input type="file"  name ="fileName" value="" style="font-family:Trebuchet MS; padding-left:7px; padding-top:3px; padding-right: 6px;">
+                 <input type="file" id="fileName" name ="fileName" value="" 
+                 style="font-family:Trebuchet MS; padding-left:7px; padding-top:3px; padding-right: 6px;" onmouseout="eMptyPicture()" onmouseover="pRemover()" onclick="pRemover()">
+                 <br><br>  <i id="pictureMsg"></i>
             </td>
             
         </tr>
