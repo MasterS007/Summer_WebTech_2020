@@ -1,6 +1,8 @@
 "use strict"
 
 window.nvalid=false;
+window.evalid=false;
+window.gvalid=false;
 var i;
  
  function neMpty()
@@ -76,10 +78,40 @@ function nRemover()
 }
 
 
+
+
+function geMpty()
+{ 
+    if(document.getElementById("Male").checked)
+    {
+        window.gvalid=true;
+    }
+    else if(document.getElementById("Female").checked)
+    { 
+        window.gvalid=true;
+    }
+    else if(document.getElementById("Other").checked)
+    {
+        window.gvalid=true;
+    }
+    else
+    {
+        document.getElementById("genderMsg").innerHTML="please choose a gender";
+        window.gvalid=false;
+       
+    }
+}
+
+function gRemover()
+{
+    document.getElementById("genderMsg").innerHTML="";
+}
+
+
 function Validate()
 {
    
-    if(window.nvalid==true)
+    if(window.nvalid==true && window.evalid==true)
     {
        
         return true;

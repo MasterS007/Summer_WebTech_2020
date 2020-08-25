@@ -29,11 +29,11 @@
        <tr height = 45px>
             <td  style="font-family: Calibri;font-size:18px ; white-space: pre;"> Gender </td>
             <td style="padding: 6px; font-family: Calibri;font-size:18px;" >
-                <input type="radio" name="gender">Male
-                <input type="radio" name="gender" >Female
-                <input type="radio" name="gender" >Other
+                <input type="radio" id="Male" name="gender" onclick="Remover()" onmouseover="gRemover()" onmouseout="geMpty()">Male
+                <input type="radio" id="Female" name="gender" onclick="Remover()" onmouseover="gRemover()" onmouseout="geMpty()">Female
+                <input type="radio" id="Other" name="gender" onclick="Remover()" onmouseover="gRemover()" onmouseout="geMpty()">Other
             </td>
-            <td ></td>
+            <td id="genderMsg" ></td>
         </tr>
 
         <tr height = 45px>
