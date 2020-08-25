@@ -145,6 +145,29 @@ function dRemover()
    
 }
 
+
+function beMpty()
+{ 
+    var blood= document.getElementById("bloodgroup").value;
+
+    if(blood=="")
+    {
+        document.getElementById("bloodMsg").innerHTML="please choose at least one";
+        window.gvalid=false;
+       
+    }
+    else
+    {
+        window.gvalid=true;
+    }
+}
+
+function bRemover()
+{
+    document.getElementById("bloodMsg").innerHTML="";
+}
+
+
 function Validate()
 {
    
