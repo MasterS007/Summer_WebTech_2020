@@ -1,3 +1,25 @@
+<?php
+    require_once('../service/userService.php');
+    if(isset($_POST['check_email']))
+    {
+        $email= $_POST['emailId'];
+
+        if(isset($email))
+        {
+            $getemail = getEmail($email);
+            if(!empty($getemail))
+            {
+                echo "email already exists!";
+            }
+
+            else
+            {
+                echo "seems good!";
+            }
+        }
+    }
+
+?>
 <?php 
 	session_start();
 	require_once('../service/userService.php');
@@ -10,7 +32,18 @@
 
 		if(empty($username) || empty($password) || empty($email)){
 			header('location: ../views/register.php?error=null_value');
-		}else{
+        }
+        if(isset($email))
+        {
+            $getemail = getEmail($email);
+            if($getemail)
+            {
+                return false;
+            }
+        }
+        
+        
+        else{
 
 			$user = [
 				'username'=> $username,

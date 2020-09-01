@@ -1,3 +1,4 @@
+
 "use strict"
 
 window.nvalid=false;
@@ -36,27 +37,36 @@ function nRemover()
  function EeMpty()
  {
     var email = document.getElementById("email").value;
-    var pos =email.search("@");
-    var pos1 = email.search(".com");
-
+    var email_data = ''
+    + 'check_email=' + window.encodeURIComponent('ON')
+    + '&emailId=' + window.encodeURIComponent(email);
+    var xhttp = new XMLHttpRequest();
     if(email=="")
     {
        document.getElementById("emailMsg").innerHTML="field can't be empty";
         window.evalid=false;
     }
-    else if (pos==-1 || pos1==-1|| pos1 < pos) 
+    else if(email!="")
     {
-        document.getElementById("emailMsg").innerHTML="invalid email must be like (sample@example.com)";
-        window.evalid=false;
-    }
-    else if(email==)
-    {
+        xhttp.open('POST', '../php/regCheck.php', true);
+		xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhttp.send(email_data);
+        
+		xhttp.onreadystatechange = function (){
+					if(this.readyState == 4 && this.status == 200){
 
+                        document.getElementById("emailMsg").innerHTML=this.responseText;
+						
+						
+					}	
+                 }
     }
+
     else
     {
         window.evalid=true;
     }
+    
  }
 
  function eRemover()
@@ -88,7 +98,7 @@ function PeMpty()
 
 function pRemover()
 {
-    document.getElementById("genderMsg").innerHTML="";
+    document.getElementById("passMsg").innerHTML="";
 }
 
 
