@@ -1,4 +1,3 @@
-
 <?php 
 	session_start();
 	require_once('../service/userService.php');
@@ -17,7 +16,7 @@
         else{
 
 			$user = [
-                'name'=> $name,
+                'uname'=> $name,
 				'username'=> $username,
 				'password'=> $password,
                 'contact' => $conTact

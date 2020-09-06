@@ -1,33 +1,33 @@
 <?php
-	require_once('../db/db.php');
+	require_once('../dbCon/dataBaseCon.php');
 
-	function getByID($id){
-		$conn = dbConnection();
+	// function getByID($id){
+	// 	$conn = dbConnection();
 
-		if(!$conn){
-			echo "DB connection error";
-		}
+	// 	if(!$conn){
+	// 		echo "DB connection error";
+	// 	}
 
-		$sql = "select * from users where id={$id}";
-		$result = mysqli_query($conn, $sql);
-		$row = mysqli_fetch_assoc($result);
-		return $row;
-	}
+	// 	$sql = "select * from users where id={$id}";
+	// 	$result = mysqli_query($conn, $sql);
+	// 	$row = mysqli_fetch_assoc($result);
+	// 	return $row;
+	// }
 
-    function getEmail($email)
-    {
-        $conn = dbConnection();
+    // function getEmail($email)
+    // {
+    //     $conn = dbConnection();
 
-		if(!$conn){
-			echo "DB connection error";
-		}
+	// 	if(!$conn){
+	// 		echo "DB connection error";
+	// 	}
 
-		$sql = "select email from users where email like '%{$email}%'";
-		$result = mysqli_query($conn, $sql);
-        $userEmail = mysqli_fetch_assoc($result);
+	// 	$sql = "select email from users where email like '%{$email}%'";
+	// 	$result = mysqli_query($conn, $sql);
+    //     $userEmail = mysqli_fetch_assoc($result);
         
-        return $userEmail;
-    }
+    //     return $userEmail;
+    // }
 	function getAllUser(){
 		$conn = dbConnection();
 
@@ -54,7 +54,7 @@
 			echo "DB connection error";
 		}
 
-		$sql = "select * from users where username='{$user['username']}' and password='{$user['password']}'";
+		$sql = "select * from users where username='{$user['username']}' and aut_password='{$user['password']}'";
 		$result = mysqli_query($conn, $sql);
 		$user = mysqli_fetch_assoc($result);
 
@@ -73,12 +73,14 @@
 			echo "DB connection error";
 		}
 
-		$sql = "insert into users (name, username, password, contact) values({$user['name']}', '{$user['username']}','{$user['password']}', '{$user['contact']}')";
+		$sql = "INSERT INTO users (aut_name, username, aut_password, contact) VALUES ('{$user['uname']}','{$user['username']}', '{$user['aut_password']}','{$user['contact']}')";
 		if(mysqli_query($conn, $sql)){
 			return true;
-		}else{
+		}
+		else{
 			return false;
 		}
+		mysqli_close($conn);
 	}
 
 
