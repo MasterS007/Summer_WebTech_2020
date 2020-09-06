@@ -18,19 +18,19 @@
 </head>
 <body>
 
-	<form action="../php/regCheck.php" method="post">
+	<form action="../php/regCheck.php" onsubmit=return validation() method="post">
 		<fieldset>
 			<legend>SignUp</legend>
 			<table>
 			<tr>
-					<td >name</td>
+					<td >Name</td>
                     <td><input type="text" id="name" name="name" onkeyup="nRemover()" onblur="neMpty()" ></td>
                     <td id="nameMsg"></td>
 				</tr>
 				<tr>
 					<td >Username</td>
                     <td><input type="text" id="uname" name="username" onkeyup="uRemover()" onblur="ueMpty()" ></td>
-                    <td id="nameMsg"></td>
+                    <td id="unameMsg"></td>
 				</tr>
 				<tr>
 					<td>Password</td>
@@ -39,8 +39,8 @@
 				</tr>
 				<tr>
 					<td>Contact Number</td>
-                    <td><input type="number" id="conNum" name="conNum" onkeyup="eRemover()" onblur="EeMpty()"></td>
-                    <td id="emailMsg"></td>
+                    <td><input type="text" id="conNum" name="conNum" onkeyup="cRemover()" onblur="ceMpty()"></td>
+                    <td id="contMsg"></td>
 				</tr>
 				<tr>
 					<td></td>
