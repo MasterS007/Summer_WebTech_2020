@@ -18,10 +18,22 @@
 			];
 			
 			$status = validate($user);
+			
 
 			if($status){
 				$_SESSION['username'] = $username;
-				header('location: ../views/home.php');
+				$data = getUsername($username);
+				if($data['type']=='Admin')
+				{
+					header('location: ../views/home.php');
+				}
+
+				else
+				{
+					echo "Author";
+					//header('location: ../views/profile.php');
+				}
+				
 			}else{
 				header('location: ../views/login.php?error=invalid_user');
 			}

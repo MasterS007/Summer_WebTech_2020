@@ -15,7 +15,9 @@
 	<a href="../php/logout.php">Logout</a> 
 	
 	<h3>User list</h3>
-
+	
+	</br>
+	</br>
 	<table border="1">
 		<tr>
 			<td>ID</td>

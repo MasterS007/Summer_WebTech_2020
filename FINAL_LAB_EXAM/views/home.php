@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="../asset/searchUser.js"></script>
 	<title>Home</title>
 </head>
 <body>
@@ -12,5 +13,6 @@
 	<a href="../views/create.php">Create New User</a> |
 	<a href="../views/all_users.php">User List</a> |
 	<a href="../php/logout.php">Logout</a> 
+	<input type="text" id="searchBox" name="searchBox" placeholder="search by author name">
 </body>
 </html>

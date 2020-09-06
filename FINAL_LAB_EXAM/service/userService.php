@@ -14,20 +14,35 @@
 	// 	return $row;
 	// }
 
-    // function getEmail($email)
-    // {
-    //     $conn = dbConnection();
+	function getByUsername($username)
+    {
+        $conn = dbConnection();
 
-	// 	if(!$conn){
-	// 		echo "DB connection error";
-	// 	}
+		if(!$conn){
+			echo "DB connection error";
+		}
 
-	// 	$sql = "select email from users where email like '%{$email}%'";
-	// 	$result = mysqli_query($conn, $sql);
-    //     $userEmail = mysqli_fetch_assoc($result);
+		$sql = "select type from users where username like '%{$username}%'";
+		$result = mysqli_query($conn, $sql);
+        $userEmail = mysqli_fetch_assoc($result);
         
-    //     return $userEmail;
-    // }
+        return $userEmail;
+	}
+	
+    function getUsername($username)
+    {
+        $conn = dbConnection();
+
+		if(!$conn){
+			echo "DB connection error";
+		}
+
+		$sql = "select type from users where username like '%{$username}%'";
+		$result = mysqli_query($conn, $sql);
+        $userEmail = mysqli_fetch_assoc($result);
+        
+        return $userEmail;
+    }
 	function getAllUser(){
 		$conn = dbConnection();
 
